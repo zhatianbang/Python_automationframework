@@ -1,0 +1,13 @@
+
+
+- desc: 设备名称_逍遥_工业app,appium启动服务端口号_4728
+  port: 4727
+  desired_caps:
+    platformName: Android
+    platformVersion: 7.1.2
+    deviceName: 127.0.0.1:21503
+    appPackage: com.chint.cloud.industry
+    appActivity: com.chint.plugin.userinfos.ui.activity.LoginActivity
+#    noReset:  !!bool True
+#    app: D:\installation\pythonworkspace\AutomationFramework\apk_package\qq.apk
+    udid: 127.0.0.1:21503

@@ -1,0 +1,10 @@
+2020-06-08 12:31:50,551 - ERROR - testError
+2020-06-08 12:32:33,640 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\conf\qq.yaml
+2020-06-08 12:32:33,640 - ERROR - 找不到文件D:\installation\pythonworkspace\AutomationFramework\APP_PO\conf\qq.yaml
+2020-06-08 12:32:52,401 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:32:52,401 - ERROR - 找不到文件D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:33:07,701 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:33:07,701 - ERROR - 找不到文件D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:33:29,688 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:33:29,690 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 12:40:08,318 - ERROR - testError

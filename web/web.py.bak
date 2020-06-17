@@ -1,0 +1,611 @@
+# coding:utf8
+from selenium.webdriver import *
+import time, os, random, datetime
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from common.logger import logger
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import traceback, re
+
+# 用类封装打开浏览器的方法
+class Browser():
+
+    def __init__(self, writer):
+        # 保存打开的浏览器
+        self.writer = writer
+        self.driver = None
+        self.text = ''  # 断言时会用到
+        self.title = ''
+        self.jsres = ''  # 执行js后的返回值
+        self.param = {}  # 用于保存参数
+        self.failtime = 0  # 判断失败次数
+        self.casescouts = 1  # 统计用例sheet页数
+
+    # 定义打开浏览器的函数
+    def open_browser(self, browser_type='gc', driver_path=None):
+        logger.info("*********************** 开始执行第" + str(self.casescouts) + "个sheet用例 **********************")
+        self.casescouts += 1
+
+        if browser_type == 'chrome' or browser_type == '' or browser_type is None:
+            if driver_path is None or driver_path == '':
+                driver_path = './lib/chromedriver'
+            option = ChromeOptions()  # 创建一个用来配置chrome属性的变量
+            option.add_argument('disable-infobars')  # 去掉提示条
+
+            # # 是否启用无界面模式
+            # option.add_argument("--headless")
+            # option.add_argument("--no-sandbox")  # 解决DevToolsActivePort文件不存在的报错
+            # option.add_argument("window-size=1936x1056")  # 设置浏览器分辨率
+            # option.add_argument("--disable-gpu")  # 谷歌文档提到需要加上这个属性来规避bug
+            # option.add_argument("--hide-scrollbars")  # 隐藏滚动条，应对一些特殊页面
+            # # option.add_argument('--incognito')  # 隐身模式（无痕模式）
+            # option.add_argument('--start-maximized')  # 浏览器最大化
+            # option.add_argument("blink-settings=imagesEnabled=false")
+
+            # 获取用户目录，提升加载速度
+            # userdir = os.environ['USERPROFILE'] + "\\AppData\\Local\\Google\\Chrome\\User Data"
+            # option.add_argument(r'--user-data-dir=' + userdir)
+            self.driver = Chrome(executable_path=driver_path, options=option)
+            self.driver.maximize_window()
+            self.driver.delete_all_cookies()
+            logger.info("成功打开chrome浏览器")
+            self.driver.implicitly_wait(10)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        elif browser_type == 'ie':
+            if driver_path is None or driver_path == '':
+                dir = './lib/IEDriver.exe'
+            self.driver = Ie(executable_path=driver_path)
+            self.driver.maximize_window()
+            self.driver.implicitly_wait(10)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        elif browser_type == 'ff':
+            if driver_path is None or driver_path == '':
+                dir = './lib/geckodriver.exe'
+            self.driver = Firefox(executable_path=driver_path)
+            self.driver.maximize_window()
+            self.driver.implicitly_wait(10)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        else:
+            print('暂未实现该浏览器')
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, '暂未实现该浏览器')
+            return False
+
+    # 设置窗口大小
+    def set_window_size(self,width, height):
+        self.driver.set_window_size(1280, 800)
+
+    def get_window_size(self):
+        self.driver.get_window_size()
+    # 访问网站
+    def get(self, url):
+        try:
+            self.driver.get(url)
+            logger.info("成功访问url【" + url + "】")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+            # self.writer.write(self.writer.row, 8, 'url')
+        except Exception as e:
+            logger.error("访问url失败【" + url + "】")
+            logger.error(traceback.format_exc())
+            self.save_png()
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, e)
+            return False
+
+    def click(self, xpath):
+        path = self.__replace_param(xpath)
+        try:
+            self.__waitelementtobeclickable(path)
+            self.driver.find_element_by_xpath(path).click()
+            logger.info("点击成功【" + path + "】")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            # 如果点击提示is not clickable at point，则使用js点击'''
+            if "is not clickable at point" in str(traceback.format_exc()) or "element is not attached to the page " in str(traceback.format_exc()):
+                self.click_js(xpath)
+            else:
+                logger.error("点击失败【" + path + "】")
+                logger.error(traceback.format_exc())
+                self.save_png()
+                self.writer.write(self.writer.row, 7, 'FAIL')
+                self.writer.write(self.writer.row, 8, traceback.format_exc())
+                return False
+
+    # ActionChains方法点击
+    def click_actionchains(self, xpath):
+        ele = self.driver.find_element_by_xpath(xpath)
+        ActionChains(self.driver).move_to_element(ele).click().perform()
+
+    def clear(self, xpath):
+        try:
+            ele = self.__find_element(xpath)
+            ele.clear()
+            logger.info("清除成功【" + xpath + "】")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            logger.error("清除失败【" + xpath + "】")
+            logger.error(traceback.format_exc())
+            self.save_png()
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    def input(self, xpath, value):
+        valuep = self.__use_random(value)
+        valuep = self.__replace_param(valuep)
+        path = self.__replace_param(xpath)
+        try:
+            ele = self.driver.find_element_by_xpath(path)
+            ele.send_keys(valuep)
+            logger.info("向【" + path + "】输入【" + valuep + "】成功")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            if "element is not attached to the page document" in traceback.format_exc():
+                try:
+                    ele = self.driver.find_element_by_xpath(path)
+                    ele.click()
+                    ele.send_keys(valuep)
+                    logger.info("再次向【" + path + "】输入【" + valuep + "】成功")
+                    self.writer.write(self.writer.row, 7, 'PASS')
+                    return True
+                except Exception as e:
+                    logger.error("向【" + path + "】输入【：" + valuep + "】失败！")
+                    logger.error(traceback.format_exc())
+                    self.save_png()
+                    self.writer.write(self.writer.row, 7, 'FAIL')
+                    self.writer.write(self.writer.row, 8, traceback.format_exc())
+                    return False
+            else:
+                logger.error(traceback.format_exc())
+                self.save_png()
+                self.writer.write(self.writer.row, 7, 'FAIL')
+                self.writer.write(self.writer.row, 8, traceback.format_exc())
+                return False
+
+    def send_keys(self, xpath, index, text):
+        text = self.__use_random(text)
+        try:
+            ele = self.__find_element(xpath)[index]
+            ele.clear()
+            ele.send_keys(text)
+            time.sleep(1)
+            logger.info("向【" + xpath + "】" + "输入【" + text + "】成功")
+            self.writer.write(self.writer.row, 7, "PASS")
+        except AttributeError:
+            logger.error("向【" + xpath + "】" + "输入【" + text + "】失败")
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, "FAIL")
+            self.writer.write(self.writer.row, 8, str(traceback.format_exc()))
+
+    # 循环输入
+    def input_circulate(self, xpath, text):
+        text = self.__use_random(text)
+        self.__waitelementtobeclickable(xpath)
+        try:
+            self.driver.find_element_by_xpath(xpath).clear()
+            for i in text:
+                self.driver.find_element_by_xpath(xpath).send_keys(i)
+            logger.info("向【" + xpath + "】循环输入【" + text + "】成功")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            logger.info("向【" + xpath + "】循环输入【" + text + "】失败")
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.save_png()
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # 关闭浏览器当前窗口
+    def close(self):
+        try:
+            self.driver.close()
+            logger.info("关闭浏览器tab成功")
+            self.writer.write(self.writer.row, 7, 'PASS')
+        except Exception as e:
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+
+    def sleep(self, t=3):
+        try:
+            time.sleep(int(float(t)))
+            logger.info("等待成功：【" + str(float(t)) + "】秒！")
+            self.writer.write(self.writer.row, 7, 'PASS')
+        except Exception as e:
+            logger.error("等待失败：【" + str(float(t)) + "】秒！")
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+
+    def get_text(self, xpath):
+        self.text = self.__find_element(xpath).text
+
+    def into_iframe(self, xpath):
+        self.driver.switch_to.frame(self.driver.find_element_by_xpath(xpath))
+
+    def out_iframe(self):
+        self.driver.switch_to.default_content()
+
+    def get_title(self):
+        self.title = self.driver.title
+
+    def switch_window(self, index=0):
+        """切换到指定下标的窗口"""
+        print(self.driver.window_handles)
+        h = self.driver.window_handles
+        self.driver.switch_to.window(h[int(index)])
+
+    """****************************************************断言模块 上****************************************************"""
+    def assert_equals(self, act, value):
+        try:
+            act = act.replace('{text}', self.text)
+            act = act.replace('{jsres}', self.jsres)
+            act = act.replace('{title}', self.title)
+            if str(act) == value:
+                logger.info("断言成功，实际值【" + act + "】，期望值【" + value + "】")
+                self.writer.write(self.writer.row, 7, 'PASS')
+            else:
+                logger.error("断言失败，实际值【" + act + "】,期望值【" + value + "】")
+                self.writer.write(self.writer.row, 7, 'FAIL')
+                self.writer.write(self.writer.row, 8, str(act))
+        except Exception as e:
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+
+    # 断言元素消失，如元素被删除
+    def assert_invisibility(self, xpath):
+        """断言元素消失，如元素被删除"""
+        time.sleep(1.5)
+        path = self.__replace_param(xpath)
+        try:
+            ele = self.driver.find_elements_by_xpath(path)
+            if len(ele) == 0:
+                logger.info("断言成功！")
+                self.writer.write(self.writer.row, 7, 'PASS')
+                return True
+            # 　移除的概念不好理解啊
+            elif WebDriverWait(self.driver, 10, 0.5).until(EC.staleness_of(self.driver.find_element_by_xpath(path))):
+                logger.error("断言失败！【" + path + "】")
+                self.writer.write(self.writer.row, 7, 'PASS')
+                return True
+        except Exception as e:
+            logger.exception("断言失败！【" + path + "】")
+            logger.error(traceback.format_exc())
+            self.save_png()
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # 判断元素存在
+    def assert_exist(self, xpath):
+        """判断元素存在"""
+        time.sleep(1)
+        path = self.__replace_param(xpath)
+        try:
+            if len(self.driver.find_elements_by_xpath(path)) >= 1:
+                self.writer.write(self.writer.row, 7, 'PASS')
+                logger.info("判断元素存在成功,元素：%s" % path)
+            else:
+                self.save_png()
+                self.writer.write(self.writer.row, 7, 'FAIL')
+                logger.info("判断元素存在失败,元素：%s" % path)
+        except:
+            logger.info("判断元素存在失败,元素：%s" % path)
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+
+    """****************************************************断言模块 下****************************************************"""
+    """**************************************************键盘按键模块 上**************************************************"""
+    # 键盘TAB
+    def press_tab(self, xpath):
+        try:
+            self.driver.find_element_by_xpath(xpath).send_keys(Keys.TAB)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            logger.info("执行键盘TAB键成功【" + xpath + "】")
+            return True
+        except Exception as e:
+            logger.error("执行键盘TAB键成功【" + xpath + "】")
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # 键盘下
+    def press_down(self, xpath):
+        """
+        发送键盘按钮
+        :param xpath: 元素定位表达式
+        :return:
+        """
+        try:
+            self.driver.find_element_by_xpath(xpath).send_keys(Keys.DOWN)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            logger.info("键盘DOWN键成功【" + xpath + "】")
+            return True
+        except Exception as e:
+            logger.error("键盘DOWN键失败【" + xpath + "】")
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # 　键盘下
+    def press_enter(self, xpath):
+        """
+        发送键盘按钮
+        :param xpath: 元素定位表达式
+        :return:
+        """
+        try:
+            self.driver.find_element_by_xpath(xpath).send_keys(Keys.ENTER)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            logger.info("键盘ENTER键成功【" + xpath + "】")
+            return True
+        except Exception as e:
+            logger.error("键盘ENTER键失败【" + xpath + "】")
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+    """**************************************************键盘按键模块 下**************************************************"""
+
+    def close_browser(self):
+        """退出驱动关闭所有窗口"""
+        time.sleep(3)
+        try:
+            self.driver.quit()
+            logger.info("关闭所有窗口，关闭所有驱动成功！")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            logger.error("关闭所有窗口，关闭所有驱动失败")
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    def close_current_window(self):
+        # 关闭selenium当前定位的窗口
+        self.driver.close()
+
+    # 滚动到指定元素（适合元素可见可定位，否则使用js滚动）
+    def moveto(self, xpath):
+        actions = ActionChains(self.driver)
+        ele = self.__find_element(xpath)
+        actions.move_to_element(ele).perform()
+
+    def execute_js(self, js):
+        self.driver.execute_script(js)
+
+    def element_displayed(self, element):
+        flag = element.is_displayed()
+        if flag is True:
+            return element
+        else:
+            return False
+
+    def forward(self):
+        """浏览器前进按钮"""
+        self.driver.forward()
+
+    def back(self):
+        """浏览器后退按钮"""
+        self.driver.back()
+
+    def refresh_f5(self):
+        """强制刷新"""
+        try:
+            ActionChains(self.driver).key_down(Keys.CONTROL).send_keys(Keys.F5).key_up(Keys.CONTROL).perform()
+            logger.info("强制刷新浏览器成功")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            logger.info("强制刷新浏览器失败")
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # def find_element(self,xpath):
+    #     logger.info("测试")
+    #     self.find_element(xpath)
+    def save_png(self):
+        """保存到项目根目录下的Screenshots下"""
+        self.failtime += 1
+        if self.failtime >= 5:
+            self.driver.implicitly_wait(0)
+            logger.info("截图超过5次，更新隐式等待时间为0,且不再截图")
+            return
+        try:
+            # file_path = os.path.dirname(os.path.abspath('.')) + '../screenshots/'
+            file_path = os.getcwd() + "/outputs/screenshots/"
+            print(file_path)
+            # now_time = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
+            now_time = datetime.datetime.now().strftime('%Y%m%d_%H_%M_%S_%f')  # 含微秒的日期时间，来源 比特量化
+            screen_name = file_path + now_time + '.png'
+            self.driver.get_screenshot_as_file(screen_name)
+            logger.info("截图成功，文件名：" + now_time + ".png")
+        except Exception as e:
+            logger.error("截图失败！")
+            logger.error(traceback.format_exc())
+
+    def click_js(self, xpath):
+        path = self.__replace_param(xpath)
+        try:
+            self.__waitelementtobeclickable(path)
+            button = self.driver.find_element_by_xpath(path)
+            self.driver.execute_script("$(arguments[0]).click()", button)
+            logger.info("js点击成功：【" + path + "】")
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception as e:
+            logger.error("执行js点击失败: ", path)
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # ID = "id"
+    # XPATH = "xpath"
+    # LINK_TEXT = "link text"
+    # PARTIAL_LINK_TEXT = "partial link text"
+    # NAME = "name"
+    # TAG_NAME = "tag name"
+    # CLASS_NAME = "class name"
+    # CSS_SELECTOR = "css selector"
+    #
+    # def jsscroll(self,loctype,loc):
+    #     if loctype== 'CLASS_NAME':
+    #         js = 'document.getElementsByClassName("'+ loc +'")[0].scrollTop=100'
+    #
+    #     driver.execute_script(js)
+
+    # 滚动到目标元素
+    def scroll_to_target(self, xpath):
+        """
+        滚动至目标元素，这里元素要先定位到才可以
+        :param xpath:  目标元素的xpath定位表达式
+        :return:
+        """
+        try:
+            target = self.driver.find_element_by_xpath(xpath)
+            self.driver.execute_script("arguments[0].scrollIntoView();", target)
+            logger.info("成功滚动到目标元素：" + xpath)
+            self.writer.write(self.writer.row, 7, 'PASS')
+            return True
+        except Exception:
+            logger.error("滚动到目标元素：" + xpath + "失败！")
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # 滚动条滚动到最上面
+    def scroll_to_top(self, id):
+        """
+        滚动掉滚动到最顶部
+        :param id: 滚动条元素id，也可以是className等属性
+        :return:
+        """
+        try:
+            js = js = "document.getElementById(\'" + id + "\').scrollIntoView()"
+            self.driver.execute_script(js)
+            self.writer.write(self.writer.row, 7, 'PASS')
+        except Exception as e:
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    # auto_it上传文件
+    def auto_upload(self, filename):
+        """
+        autoit上传文件
+        :param file_path: 文件所在路径/文件名
+        :return:
+        """
+        try:
+            file_path = os.path.abspath(".") + "\\data\\" + filename
+            # logger.info(file_path)
+            exepath = os.path.abspath(".") + "\\lib\\autoit.exe %s" % file_path  # 自动获取调用脚本所在的当前路径，并拼接
+            logger.info(exepath)
+            os.system(exepath)
+            self.writer.write(self.writer.row, 7, 'PASS')
+        except Exception as e:
+            logger.error(traceback.format_exc())
+            self.writer.write(self.writer.row, 7, 'FAIL')
+            self.writer.write(self.writer.row, 8, traceback.format_exc())
+            return False
+
+    def __find_element(self, xpath):
+        try:
+            element = WebDriverWait(self.driver, 10, 0.5).until(lambda x: x.find_element(By.XPATH, xpath))
+            return element
+        except Exception as e:
+            logger.error("查找元素失败：" + xpath)
+            logger.exception(str(traceback.format_exc()))
+
+    def __waitelementtobeclickable(self, xpath):
+        """等待元素可点击,尝试"""
+        attempts = 1
+        result = False
+        if self.failtime >= 5:
+            return xpath
+        while attempts < 3 and not result:
+            # 尝试2次
+            try:
+                WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath)))
+                result = True
+            except Exception as e:
+                if attempts == 2:
+                    logger.error("尝试%s次等待元素：" + str(xpath) + "可点击失败！")
+                    logger.error(traceback.format_exc())
+                    attempts += 1
+
+    def __waitelementvisibility(self, xpath):
+        """等待元素可见,尝试2次"""
+        attempts = 1
+        result = False
+
+        if self.failtime > 5:
+            return xpath
+        while attempts < 3 and not result:
+            # 尝试2次
+            try:
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, xpath)))
+                result = True
+            except Exception as e:
+                attempts += 1
+                if attempts == 3:
+                    logger.error("尝试%s次等待元素：" + str(xpath) + "可见失败！")
+                    logger.error(traceback.format_exc())
+
+    def __use_random(self, s):
+        """最多6位随机数"""
+        res = s
+        try:
+            if s.find('useRandom') != -1:
+                res = s.replace('useRandom', str(random.randint(1, 9999999)))
+                p = ""
+                pp = s.split('useRandom')  # 以useRandom分割成list
+                for i in range(len(pp)):
+                    p += pp[i]  # 把分割后的字符串拼接成1个字符串作为key，
+                self.param[p] = str(res)
+        except Exception as e:
+            logger.error("替换成随机数失败：", s)
+            logger.error(traceback.format_exc())
+        return res
+
+    def __replace_param(self, p):
+        """
+        替换参数，如果参数中含有{}，则遍历list，把参数中{param}部分替换成list[param]对应的值，返回替换后的值，如无返回原参数值
+        :param p: 需要进行替换的参数
+        :return: 返回替换后的或者原始的p
+        """
+        res = p
+        if self.param == {}:
+            res = p
+        else:
+
+            try:
+                reg = ".*\\{.*\\}.*"
+                if re.match(reg, p):
+                    for key in self.param:
+                        res = res.replace("{" + key + "}", self.param[key])
+            except Exception as e:
+                logger.error("替换参数", p, "失败")
+                logger.error(traceback.format_exc())
+        return res
+
+
+if __name__ == '__main__':
+    file_path = os.path.dirname(os.path.abspath('.')) + '/screenshots/'
+    print(file_path)

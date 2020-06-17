@@ -1,0 +1,34 @@
+- desc: 设备名称_MuMu家,appium启动服务端口号_4724
+  port: 4723
+  desired_caps:
+    platformName: Android
+    deviceName: 127.0.0.1:7555
+    platformVersion: 6.0.1
+#    appPackage: com.chint.cloud.industry
+#    appActivity: com.chint.plugin.userinfos.ui.activity.NavigationActivity
+    #noReset:  !!bool True
+    app: D:\installation\app_PO\apk_package\app-debug.apk
+    udid: 127.0.0.1:7555
+
+- desc: 设备名称_逍遥家,appium启动服务端口号_4726
+  port: 4725
+  desired_caps:
+    platformName: Android
+    platformVersion: 7.1.2
+    deviceName: 127.0.0.1:21503
+    appPackage: com.taobao.taobao
+    appActivity: com.taobao.tao.welcome.Welcome
+#    noReset:  True
+#    app: D:\installation\app_PO\apk_package\app-debug.apk
+    udid: 127.0.0.1:21503
+
+
+    #夜神模拟器端口号：62001
+    #
+    #海马模拟器端口号：26944
+    #
+    #逍遥模拟器端口号：21503
+    #
+    #MuMu模拟器端口号：7555
+    #
+    #天天模拟器端口号：6555

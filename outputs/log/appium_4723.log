@@ -1,0 +1,86 @@
+2020-06-08 03:46:51:058 [Appium] Welcome to Appium v1.17.1
+2020-06-08 03:46:51:059 [Appium] Non-default server args:
+2020-06-08 03:46:51:060 [Appium]   address: 127.0.0.1
+2020-06-08 03:46:51:061 [Appium]   logFile: D:\installation\pythonworkspace\AutomationFramework/outputs/log/appium_4723.log
+2020-06-08 03:46:51:064 [Appium]   udid: 127.0.0.1:7555
+2020-06-08 03:46:51:065 [Appium]   noReset: true
+2020-06-08 03:46:51:065 [Appium] Deprecated server args:
+2020-06-08 03:46:51:065 [Appium]   -U,--udid => --default-capabilities '{"udid":"127.0.0.1:7555"}'
+2020-06-08 03:46:51:066 [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2020-06-08 03:46:51:066 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2020-06-08 03:46:51:066 [Appium]   udid: 127.0.0.1:7555
+2020-06-08 03:46:51:066 [Appium]   noReset: true
+2020-06-08 03:46:51:231 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2020-06-08 03:46:56:046 [HTTP] --> GET /wd/hub/status
+2020-06-08 03:46:56:046 [HTTP] {}
+2020-06-08 03:46:56:047 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2020-06-08 03:46:56:048 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.17.1"}}
+2020-06-08 03:46:56:053 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2020-06-08 03:46:56:053 [HTTP] 
+2020-06-08 03:46:56:095 [HTTP] --> POST /wd/hub/session
+2020-06-08 03:46:56:096 [HTTP] {"capabilities":{"firstMatch":[{"platformName":"Android","appium:deviceName":"127.0.0.1:7555","appium:platformVersion":"6.0.1","appium:appPackage":"com.tencent.mobileqq","appium:appActivity":".activity.LoginActivity","appium:noReset":true,"appium:udid":"127.0.0.1:7555"}]},"desiredCapabilities":{"platformName":"Android","deviceName":"127.0.0.1:7555","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.LoginActivity","noReset":true,"udid":"127.0.0.1:7555"}}
+2020-06-08 03:46:56:096 [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"127.0.0.1:7555","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.LoginActivity","noReset":true,"udid":"127.0.0.1:7555"},null,{"firstMatch":[{"platformName":"Android","appium:deviceName":"127.0.0.1:7555","appium:platformVersion":"6.0.1","appium:appPackage":"com.tencent.mobileqq","appium:appActivity":".activity.LoginActivity","appium:noReset":true,"appium:udid":"127.0.0.1:7555"}]}]
+2020-06-08 03:46:56:096 [BaseDriver] Event 'newSessionRequested' logged at 1591588016096 (11:46:56 GMT+0800 (GMT+08:00))
+2020-06-08 03:46:56:101 [Appium] 
+2020-06-08 03:46:56:101 [Appium] ======================================================================
+2020-06-08 03:46:56:101 [Appium]   DEPRECATION WARNING:
+2020-06-08 03:46:56:101 [Appium] 
+2020-06-08 03:46:56:101 [Appium]   The 'automationName' capability was not provided in the desired 
+2020-06-08 03:46:56:101 [Appium]   capabilities for this Android session
+2020-06-08 03:46:56:101 [Appium] 
+2020-06-08 03:46:56:102 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2020-06-08 03:46:56:102 [Appium]   UiAutomator2 Driver
+2020-06-08 03:46:56:102 [Appium] 
+2020-06-08 03:46:56:102 [Appium]   The next major version of Appium (2.x) will **require** the 
+2020-06-08 03:46:56:102 [Appium]   'automationName' capability to be set for all sessions on all 
+2020-06-08 03:46:56:102 [Appium]   platforms
+2020-06-08 03:46:56:102 [Appium] 
+2020-06-08 03:46:56:102 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2020-06-08 03:46:56:102 [Appium]   'automationName=UiAutomator1'
+2020-06-08 03:46:56:103 [Appium] 
+2020-06-08 03:46:56:103 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2020-06-08 03:46:56:103 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2020-06-08 03:46:56:103 [Appium] 
+2020-06-08 03:46:56:103 [Appium]   For more information about drivers, please visit 
+2020-06-08 03:46:56:103 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2020-06-08 03:46:56:103 [Appium]   'Drivers' menu
+2020-06-08 03:46:56:103 [Appium] 
+2020-06-08 03:46:56:104 [Appium] ======================================================================
+2020-06-08 03:46:56:104 [Appium] 
+2020-06-08 03:46:56:267 [Appium] Appium v1.17.1 creating new AndroidUiautomator2Driver (v1.44.2) session
+2020-06-08 03:46:56:269 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2020-06-08 03:46:56:269 [BaseDriver] Creating session with W3C capabilities: {
+2020-06-08 03:46:56:269 [BaseDriver]   "alwaysMatch": {
+2020-06-08 03:46:56:269 [BaseDriver]     "platformName": "Android",
+2020-06-08 03:46:56:269 [BaseDriver]     "appium:deviceName": "127.0.0.1:7555",
+2020-06-08 03:46:56:270 [BaseDriver]     "appium:platformVersion": "6.0.1",
+2020-06-08 03:46:56:270 [BaseDriver]     "appium:appPackage": "com.tencent.mobileqq",
+2020-06-08 03:46:56:270 [BaseDriver]     "appium:appActivity": ".activity.LoginActivity",
+2020-06-08 03:46:56:270 [BaseDriver]     "appium:noReset": true,
+2020-06-08 03:46:56:270 [BaseDriver]     "appium:udid": "127.0.0.1:7555"
+2020-06-08 03:46:56:270 [BaseDriver]   },
+2020-06-08 03:46:56:270 [BaseDriver]   "firstMatch": [
+2020-06-08 03:46:56:270 [BaseDriver]     {}
+2020-06-08 03:46:56:270 [BaseDriver]   ]
+2020-06-08 03:46:56:270 [BaseDriver] }
+2020-06-08 03:46:56:276 [BaseDriver] Session created with session id: 8712ad93-14e6-4005-9dde-a2dbb6cbc038
+2020-06-08 03:46:56:276 [UiAutomator2] Starting 'com.tencent.mobileqq' directly on the device
+2020-06-08 03:46:56:281 [ADB] Found 1 'build-tools' folders under 'D:\installation\android-sdk-windows' (newest first):
+2020-06-08 03:46:56:281 [ADB]     D:/installation/android-sdk-windows/build-tools/29.0.3
+2020-06-08 03:46:56:282 [ADB] Using 'adb.exe' from 'D:\installation\android-sdk-windows\platform-tools\adb.exe'
+2020-06-08 03:46:56:282 [AndroidDriver] Retrieving device list
+2020-06-08 03:46:56:282 [ADB] Trying to find a connected android device
+2020-06-08 03:46:56:282 [ADB] Getting connected devices...
+2020-06-08 03:46:56:436 [ADB] Connected devices: [{"udid":"127.0.0.1:21503","state":"device"}]
+2020-06-08 03:46:56:436 [AndroidDriver] Device 127.0.0.1:7555 was not in the list of connected devices
+2020-06-08 03:46:56:436 [UiAutomator2] Deleting UiAutomator2 session
+2020-06-08 03:46:56:437 [BaseDriver] Event 'newSessionStarted' logged at 1591588016437 (11:46:56 GMT+0800 (GMT+08:00))
+2020-06-08 03:46:56:490 [W3C] Encountered internal error running command: Error: Device 127.0.0.1:7555 was not in the list of connected devices
+2020-06-08 03:46:56:490 [W3C]     at Object.errorAndThrow (D:\installation\node-v12.15.0-win-x64\node_modules\appium\node_modules\appium-support\lib\logging.js:87:35)
+2020-06-08 03:46:56:490 [W3C]     at Object.getDeviceInfoFromCaps (D:\installation\node-v12.15.0-win-x64\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:185:16)
+2020-06-08 03:46:56:490 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (D:\installation\node-v12.15.0-win-x64\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:290:26)
+2020-06-08 03:46:56:490 [W3C]     at AndroidUiautomator2Driver.createSession (D:\installation\node-v12.15.0-win-x64\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:212:7)
+2020-06-08 03:46:56:490 [W3C]     at AppiumDriver.createSession (D:\installation\node-v12.15.0-win-x64\node_modules\appium\lib\appium.js:358:35)
+2020-06-08 03:46:56:498 [W3C] Destroying socket connection
+2020-06-08 03:46:56:498 [HTTP] <-- POST /wd/hub/session 500 402 ms - 685
+2020-06-08 03:46:56:499 [HTTP] 

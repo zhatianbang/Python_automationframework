@@ -1,0 +1,51 @@
+2020-06-08 12:41:14,564 - ERROR - testError
+2020-06-08 12:41:35,957 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:41:35,960 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 12:49:17,064 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:49:17,066 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 12:49:37,618 - INFO - 已执行cmd D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-08 12:49:41,219 - INFO - adb连接设备成功
+2020-06-08 12:50:14,310 - INFO - Click element by id: com.tencent.mobileqq:id/btn_login...
+2020-06-08 12:50:16,374 - INFO - Clear input-box: //*[@content-desc="请输入QQ号码或手机或邮箱"]...
+2020-06-08 12:50:17,491 - INFO - Input: 120517972
+2020-06-08 12:58:51,439 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 12:58:51,442 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 12:59:11,968 - INFO - 已执行cmd D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-08 12:59:15,576 - INFO - adb连接设备成功
+2020-06-08 12:59:15,740 - INFO - 成功: 已终止 PID 为 33576 的进程。
+
+2020-06-08 12:59:49,000 - INFO - Click element by id: com.tencent.mobileqq:id/btn_login...
+2020-06-08 12:59:51,061 - INFO - Clear input-box: //*[@content-desc="请输入QQ号码或手机或邮箱"]...
+2020-06-08 12:59:52,167 - INFO - Input: 120517972
+2020-06-08 12:59:54,888 - INFO - Clear input-box: //*[@content-desc="密码 安全"]...
+2020-06-08 12:59:55,969 - INFO - Input: 12345
+2020-06-09 11:07:16,877 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:07:16,880 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:07:50,116 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:07:50,119 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:07:50,119 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:07:50,122 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:56:33,006 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:56:33,009 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:56:33,009 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:56:33,011 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:57:07,697 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:57:07,700 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:57:07,700 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:57:07,702 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:57:28,200 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:57:28,203 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:57:28,203 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:57:28,205 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:07,245 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:07,248 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:07,248 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:07,250 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:30,200 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:30,204 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:30,204 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:30,206 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:47,761 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:47,764 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 11:58:47,764 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:58:47,766 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}

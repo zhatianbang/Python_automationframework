@@ -1,0 +1,19 @@
+2020-06-09 02:27:22:628 [Appium] Welcome to Appium v1.17.1
+2020-06-09 02:27:22:629 [Appium] Non-default server args:
+2020-06-09 02:27:22:630 [Appium]   address: 127.0.0.1
+2020-06-09 02:27:22:630 [Appium]   logFile: D:\installation\pythonworkspace\AutomationFramework\APP_PO/log/appium_4723.log
+2020-06-09 02:27:22:630 [Appium]   udid: 127.0.0.1:7555
+2020-06-09 02:27:22:630 [Appium]   noReset: true
+2020-06-09 02:27:22:631 [Appium] Deprecated server args:
+2020-06-09 02:27:22:631 [Appium]   -U,--udid => --default-capabilities '{"udid":"127.0.0.1:7555"}'
+2020-06-09 02:27:22:631 [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2020-06-09 02:27:22:631 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2020-06-09 02:27:22:631 [Appium]   udid: 127.0.0.1:7555
+2020-06-09 02:27:22:632 [Appium]   noReset: true
+2020-06-09 02:27:22:791 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2020-06-09 02:27:27:486 [HTTP] --> GET /wd/hub/status
+2020-06-09 02:27:27:486 [HTTP] {}
+2020-06-09 02:27:27:489 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2020-06-09 02:27:27:491 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.17.1"}}
+2020-06-09 02:27:27:498 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2020-06-09 02:27:27:498 [HTTP] 

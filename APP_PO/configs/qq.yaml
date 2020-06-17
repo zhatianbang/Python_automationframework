@@ -1,0 +1,25 @@
+- desc: 设备名称_MuMu,appium启动服务端口号_4724
+  port: 4723
+  desired_caps:
+    platformName: Android
+    deviceName: 127.0.0.1:7555
+    platformVersion: 6.0.1
+    appPackage: com.tencent.mobileqq
+    appActivity: .activity.LoginActivity
+    noReset:  !!bool True
+#    app: D:\installation\pythonworkspace\AutomationFramework\apk_package\qq.apk
+    udid: 127.0.0.1:7555
+
+
+- desc: 设备名称_逍遥,appium启动服务端口号_4725
+  port: 4724
+  desired_caps:
+    platformName: Android
+    platformVersion: 7.1.2
+    deviceName: 127.0.0.1:21503
+    appPackage: com.tencent.mobileqq
+    appActivity: .activity.LoginActivity
+    noReset:  !!bool True
+#    app: D:\installation\pythonworkspace\AutomationFramework\apk_package\qq.apk
+    udid: 127.0.0.1:21503
+

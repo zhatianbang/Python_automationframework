@@ -1,0 +1,2310 @@
+2020-06-08 13:40:57,227 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 13:40:57,229 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 13:41:44,529 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 13:41:44,532 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 13:42:05,016 - INFO - 已执行cmd D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-08 13:42:08,613 - INFO - adb连接设备成功
+2020-06-08 13:42:31,752 - INFO - 开始用例
+2020-06-08 13:42:31,756 - INFO - ['mumuQQ', 'APP', '手机QQ自动化测试报告', '', '', '', '', '', '']
+2020-06-08 13:42:31,756 - WARNING - ./outputs/resultcases/chint结果-多线程APP.xls file already exist!
+2020-06-08 13:42:31,761 - INFO - ['mumuQQ登录与退出']
+2020-06-08 13:42:31,854 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 166, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-08 13:42:31,854 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-08 13:42:31,854 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 13:42:31,854 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-08 13:42:31,855 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 13:42:31,855 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-08 13:42:31,855 - INFO - 关闭页面退出驱动失败
+2020-06-08 13:42:31,855 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-08 13:42:35,018 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-08 13:42:35,026 - INFO - ['mumuQQ登录与退出']
+2020-06-08 13:42:35,026 - INFO - 开始发送邮件
+2020-06-08 13:42:35,027 - INFO - 结束用例
+2020-06-08 13:42:35,027 - INFO - 开始用例
+2020-06-08 13:42:35,029 - INFO - ['mumuQQ', 'APP', '手机QQ自动化测试报告', '', '', '', '', '', '']
+2020-06-08 13:42:35,029 - WARNING - ./outputs/resultcases/chint结果-多线程APP.xls file already exist!
+2020-06-08 13:42:35,033 - INFO - ['mumuQQ登录与退出']
+2020-06-08 13:42:35,034 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 166, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-08 13:42:35,034 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-08 13:42:35,035 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 13:42:35,035 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-08 13:42:35,035 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 13:42:35,035 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-08 13:42:35,036 - INFO - 关闭页面退出驱动失败
+2020-06-08 13:42:35,036 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-08 13:42:38,153 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 128
+2020-06-08 13:42:38,158 - INFO - ['mumuQQ登录与退出']
+2020-06-08 13:42:38,159 - INFO - 开始发送邮件
+2020-06-08 13:42:38,159 - INFO - 结束用例
+2020-06-08 15:03:00,406 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-08 15:03:00,409 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-08 15:03:20,923 - INFO - 已执行cmd D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-08 15:03:24,548 - INFO - adb连接设备成功
+2020-06-08 15:03:47,709 - INFO - 开始用例
+2020-06-08 15:03:47,713 - INFO - ['mumuQQ', 'APP', '手机QQ自动化测试报告', '', '', '', '', '', '']
+2020-06-08 15:03:47,713 - WARNING - ./outputs/resultcases/chint结果-多线程APP.xls file already exist!
+2020-06-08 15:03:47,719 - INFO - ['mumuQQ登录与退出']
+2020-06-08 15:03:47,826 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 166, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-08 15:03:47,826 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-08 15:03:47,826 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 15:03:47,826 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-08 15:03:47,827 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 156, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-08 15:03:47,827 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-08 15:03:47,827 - INFO - 关闭页面退出驱动失败
+2020-06-08 15:03:47,827 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 08:34:21,585 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:34:21,585 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:34:21,586 - INFO - 开始发送邮件
+2020-06-09 08:34:21,586 - INFO - 结束用例
+2020-06-09 08:35:38,623 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:35:38,623 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:35:38,624 - INFO - 开始发送邮件
+2020-06-09 08:35:38,624 - INFO - 结束用例
+2020-06-09 08:37:33,879 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:37:33,880 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:37:33,880 - INFO - 开始发送邮件
+2020-06-09 08:37:33,880 - INFO - 结束用例
+2020-06-09 08:38:30,324 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 166, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 08:38:30,325 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 08:38:30,325 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 08:38:30,325 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 08:38:30,326 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 08:38:30,333 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 08:38:30,333 - INFO - 关闭页面退出驱动失败
+2020-06-09 08:38:30,333 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 269, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 08:38:33,549 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 08:38:33,557 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:38:33,557 - INFO - 开始发送邮件
+2020-06-09 08:38:33,558 - INFO - 结束用例
+2020-06-09 08:38:39,320 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:38:39,320 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:38:39,320 - INFO - 开始发送邮件
+2020-06-09 08:38:39,321 - INFO - 结束用例
+2020-06-09 08:38:46,065 - INFO - *********************** 开始执行第1个sheet用例 **********************
+2020-06-09 08:38:51,222 - INFO - 成功打开chrome浏览器
+2020-06-09 08:39:17,152 - INFO - 111*********************** 开始执行第1个sheet用例 **********************
+2020-06-09 08:41:42,084 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:41:42,085 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:41:42,086 - INFO - 开始发送邮件
+2020-06-09 08:41:42,086 - INFO - 结束用例
+2020-06-09 08:41:54,591 - INFO - ['mumuQQ登录与退出']
+2020-06-09 08:41:54,591 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 08:41:54,592 - INFO - 开始发送邮件
+2020-06-09 08:41:54,592 - INFO - 结束用例
+2020-06-09 09:23:11,655 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:23:11,656 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:23:11,656 - INFO - 开始发送邮件
+2020-06-09 09:23:11,656 - INFO - 结束用例
+2020-06-09 09:23:46,967 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:23:46,968 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:23:46,968 - INFO - Fail
+2020-06-09 09:23:46,968 - INFO - 开始发送邮件
+2020-06-09 09:23:48,178 - INFO - 邮件发送成功
+2020-06-09 09:23:48,179 - INFO - 结束用例
+2020-06-09 09:31:22,789 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:31:22,789 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:31:22,790 - INFO - 开始发送邮件
+2020-06-09 09:31:22,790 - INFO - 结束用例
+2020-06-09 09:45:42,495 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:45:42,495 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:45:42,496 - INFO - 开始发送邮件
+2020-06-09 09:45:42,496 - INFO - 结束用例
+2020-06-09 09:46:05,301 - INFO - 
+2020-06-09 09:46:05,301 - INFO -  
+2020-06-09 09:46:05,301 - INFO - 
+2020-06-09 09:46:05,301 - INFO - 
+2020-06-09 09:46:05,302 - INFO - 启动模拟器、appium、app
+2020-06-09 09:46:05,302 - INFO - set_up
+2020-06-09 09:46:05,302 - INFO - MuMu
+2020-06-09 09:46:05,302 - INFO - qq.yaml
+2020-06-09 09:46:05,302 - INFO - 
+2020-06-09 09:46:05,302 - INFO -  
+2020-06-09 09:46:05,302 - INFO - 
+2020-06-09 09:46:05,303 - INFO - 
+2020-06-09 09:46:05,303 - INFO - 登陆
+2020-06-09 09:46:05,303 - INFO - click
+2020-06-09 09:46:05,303 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 09:46:05,303 - INFO - 
+2020-06-09 09:46:05,303 - INFO - 输入用户名
+2020-06-09 09:46:05,303 - INFO - input
+2020-06-09 09:46:05,304 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 09:46:05,304 - INFO - 120517972
+2020-06-09 09:46:05,304 - INFO - 输入码密码
+2020-06-09 09:46:05,304 - INFO - input
+2020-06-09 09:46:05,304 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 09:46:05,304 - INFO - 123456
+2020-06-09 09:46:05,304 - INFO - 停止app
+2020-06-09 09:46:05,305 - INFO - quit
+2020-06-09 09:46:05,305 - INFO - 
+2020-06-09 09:46:05,305 - INFO - 
+2020-06-09 09:46:05,305 - INFO - 停止appium
+2020-06-09 09:46:05,305 - INFO - closeappium
+2020-06-09 09:46:05,305 - INFO - 
+2020-06-09 09:46:05,305 - INFO - 
+2020-06-09 09:46:05,314 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:46:05,314 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:46:05,314 - INFO - 开始发送邮件
+2020-06-09 09:46:05,315 - INFO - 结束用例
+2020-06-09 09:49:13,472 - INFO - 
+2020-06-09 09:49:13,473 - INFO -  
+2020-06-09 09:49:13,473 - INFO - 
+2020-06-09 09:49:13,473 - INFO - 
+2020-06-09 09:49:13,473 - INFO - None
+2020-06-09 09:49:13,473 - INFO - 参数的长度:0
+2020-06-09 09:49:13,474 - INFO - 启动模拟器、appium、app
+2020-06-09 09:49:13,474 - INFO - set_up
+2020-06-09 09:49:13,474 - INFO - MuMu
+2020-06-09 09:49:13,474 - INFO - qq.yaml
+2020-06-09 09:49:13,474 - INFO - None
+2020-06-09 09:49:13,474 - INFO - 参数的长度:0
+2020-06-09 09:49:13,474 - INFO - 
+2020-06-09 09:49:13,474 - INFO -  
+2020-06-09 09:49:13,474 - INFO - 
+2020-06-09 09:49:13,475 - INFO - 
+2020-06-09 09:49:13,475 - INFO - None
+2020-06-09 09:49:13,475 - INFO - 参数的长度:0
+2020-06-09 09:49:13,475 - INFO - 登陆
+2020-06-09 09:49:13,475 - INFO - click
+2020-06-09 09:49:13,475 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 09:49:13,475 - INFO - 
+2020-06-09 09:49:13,476 - INFO - None
+2020-06-09 09:49:13,476 - INFO - 参数的长度:0
+2020-06-09 09:49:13,476 - INFO - 输入用户名
+2020-06-09 09:49:13,476 - INFO - input
+2020-06-09 09:49:13,476 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 09:49:13,476 - INFO - 120517972
+2020-06-09 09:49:13,476 - INFO - None
+2020-06-09 09:49:13,476 - INFO - 参数的长度:0
+2020-06-09 09:49:13,477 - INFO - 输入码密码
+2020-06-09 09:49:13,477 - INFO - input
+2020-06-09 09:49:13,477 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 09:49:13,477 - INFO - 123456
+2020-06-09 09:49:13,477 - INFO - None
+2020-06-09 09:49:13,477 - INFO - 参数的长度:0
+2020-06-09 09:49:13,477 - INFO - 停止app
+2020-06-09 09:49:13,477 - INFO - quit
+2020-06-09 09:49:13,478 - INFO - 
+2020-06-09 09:49:13,478 - INFO - 
+2020-06-09 09:49:13,478 - INFO - None
+2020-06-09 09:49:13,478 - INFO - 参数的长度:0
+2020-06-09 09:49:13,478 - INFO - 停止appium
+2020-06-09 09:49:13,478 - INFO - closeappium
+2020-06-09 09:49:13,478 - INFO - 
+2020-06-09 09:49:13,478 - INFO - 
+2020-06-09 09:49:13,479 - INFO - None
+2020-06-09 09:49:13,479 - INFO - 参数的长度:0
+2020-06-09 09:49:13,497 - INFO - ['mumuQQ登录与退出']
+2020-06-09 09:49:13,497 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 09:49:13,498 - INFO - 开始发送邮件
+2020-06-09 09:49:13,498 - INFO - 结束用例
+2020-06-09 10:03:49,046 - INFO - 具体参数：
+2020-06-09 10:03:49,046 - INFO - 
+2020-06-09 10:03:49,046 - INFO -  
+2020-06-09 10:03:49,046 - INFO - 
+2020-06-09 10:03:49,046 - INFO - 
+2020-06-09 10:03:49,046 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,046 - INFO - None
+2020-06-09 10:03:49,046 - INFO - 参数的长度:0
+2020-06-09 10:03:49,047 - INFO - 具体参数：
+2020-06-09 10:03:49,047 - INFO - 启动模拟器mumu
+2020-06-09 10:03:49,047 - INFO - runcmd
+2020-06-09 10:03:49,047 - INFO - D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-09 10:03:49,047 - INFO - 15
+2020-06-09 10:03:49,047 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,047 - INFO - None
+2020-06-09 10:03:49,048 - INFO - 参数的长度:0
+2020-06-09 10:03:49,048 - INFO - 具体参数：
+2020-06-09 10:03:49,048 - INFO - adb连接模拟器
+2020-06-09 10:03:49,048 - INFO - runcmd
+2020-06-09 10:03:49,048 - INFO - adb connect 127.0.0.1:21503
+2020-06-09 10:03:49,048 - INFO - 5
+2020-06-09 10:03:49,050 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,050 - INFO - None
+2020-06-09 10:03:49,051 - INFO - 参数的长度:0
+2020-06-09 10:03:49,051 - INFO - 具体参数：
+2020-06-09 10:03:49,051 - INFO - 启动appium
+2020-06-09 10:03:49,051 - INFO - runappium
+2020-06-09 10:03:49,051 - INFO - 
+2020-06-09 10:03:49,051 - INFO - 
+2020-06-09 10:03:49,051 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,051 - INFO - None
+2020-06-09 10:03:49,051 - INFO - 参数的长度:0
+2020-06-09 10:03:49,052 - INFO - 具体参数：
+2020-06-09 10:03:49,052 - INFO - 打开APP
+2020-06-09 10:03:49,052 - INFO - runapp
+2020-06-09 10:03:49,052 - INFO - { "platformName": "Android",
+  "platformVersion": "7.1.2",
+  "deviceName": "127.0.0.1:21503",
+  "appPackage": "com.tencent.mobileqq",
+  "appActivity": ".activity.SplashActivity",
+  "noReset": "true",
+  "unicodeKeyboard": "true",
+  "resetKeyboard": "true"}
+2020-06-09 10:03:49,052 - INFO - 
+2020-06-09 10:03:49,052 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,052 - INFO - None
+2020-06-09 10:03:49,052 - INFO - 参数的长度:0
+2020-06-09 10:03:49,053 - INFO - 具体参数：
+2020-06-09 10:03:49,053 - INFO - 
+2020-06-09 10:03:49,053 - INFO -  
+2020-06-09 10:03:49,053 - INFO - 
+2020-06-09 10:03:49,053 - INFO - 
+2020-06-09 10:03:49,053 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,053 - INFO - None
+2020-06-09 10:03:49,053 - INFO - 参数的长度:0
+2020-06-09 10:03:49,054 - INFO - 具体参数：
+2020-06-09 10:03:49,054 - INFO - 登陆
+2020-06-09 10:03:49,054 - INFO - click
+2020-06-09 10:03:49,054 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:03:49,054 - INFO - 
+2020-06-09 10:03:49,054 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,054 - INFO - None
+2020-06-09 10:03:49,055 - INFO - 参数的长度:0
+2020-06-09 10:03:49,055 - INFO - 具体参数：
+2020-06-09 10:03:49,055 - INFO - 输入用户名
+2020-06-09 10:03:49,056 - INFO - input
+2020-06-09 10:03:49,056 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:03:49,056 - INFO - 120517972
+2020-06-09 10:03:49,056 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,056 - INFO - None
+2020-06-09 10:03:49,056 - INFO - 参数的长度:0
+2020-06-09 10:03:49,056 - INFO - 具体参数：
+2020-06-09 10:03:49,056 - INFO - 输入码密码
+2020-06-09 10:03:49,056 - INFO - input
+2020-06-09 10:03:49,056 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:03:49,056 - INFO - 123456
+2020-06-09 10:03:49,057 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,057 - INFO - None
+2020-06-09 10:03:49,057 - INFO - 参数的长度:0
+2020-06-09 10:03:49,057 - INFO - 具体参数：
+2020-06-09 10:03:49,057 - INFO - 停止app
+2020-06-09 10:03:49,057 - INFO - quit
+2020-06-09 10:03:49,057 - INFO - 
+2020-06-09 10:03:49,057 - INFO - 
+2020-06-09 10:03:49,057 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,057 - INFO - None
+2020-06-09 10:03:49,058 - INFO - 参数的长度:0
+2020-06-09 10:03:49,058 - INFO - 具体参数：
+2020-06-09 10:03:49,058 - INFO - 停止appium
+2020-06-09 10:03:49,058 - INFO - closeappium
+2020-06-09 10:03:49,058 - INFO - 
+2020-06-09 10:03:49,058 - INFO - 
+2020-06-09 10:03:49,058 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:03:49,058 - INFO - None
+2020-06-09 10:03:49,058 - INFO - 参数的长度:0
+2020-06-09 10:03:49,069 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:03:49,070 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:03:49,070 - INFO - 开始发送邮件
+2020-06-09 10:03:49,070 - INFO - 结束用例
+2020-06-09 10:04:19,681 - INFO - 具体参数：
+2020-06-09 10:04:19,682 - INFO - 
+2020-06-09 10:04:19,682 - INFO -  
+2020-06-09 10:04:19,682 - INFO - 
+2020-06-09 10:04:19,682 - INFO - 
+2020-06-09 10:04:19,682 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,682 - INFO - None
+2020-06-09 10:04:19,682 - INFO - 参数的长度:0
+2020-06-09 10:04:19,683 - INFO - 具体参数：
+2020-06-09 10:04:19,683 - INFO - 启动模拟器、appium、app
+2020-06-09 10:04:19,683 - INFO - set_up
+2020-06-09 10:04:19,684 - INFO - MuMu
+2020-06-09 10:04:19,684 - INFO - qq.yaml
+2020-06-09 10:04:19,684 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,684 - INFO - None
+2020-06-09 10:04:19,684 - INFO - 参数的长度:0
+2020-06-09 10:04:19,684 - INFO - 具体参数：
+2020-06-09 10:04:19,684 - INFO - 
+2020-06-09 10:04:19,684 - INFO -  
+2020-06-09 10:04:19,684 - INFO - 
+2020-06-09 10:04:19,685 - INFO - 
+2020-06-09 10:04:19,685 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,685 - INFO - None
+2020-06-09 10:04:19,685 - INFO - 参数的长度:0
+2020-06-09 10:04:19,685 - INFO - 具体参数：
+2020-06-09 10:04:19,685 - INFO - 登陆
+2020-06-09 10:04:19,685 - INFO - click
+2020-06-09 10:04:19,685 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:04:19,685 - INFO - 
+2020-06-09 10:04:19,686 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,686 - INFO - None
+2020-06-09 10:04:19,686 - INFO - 参数的长度:0
+2020-06-09 10:04:19,686 - INFO - 具体参数：
+2020-06-09 10:04:19,686 - INFO - 输入用户名
+2020-06-09 10:04:19,686 - INFO - input
+2020-06-09 10:04:19,686 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:04:19,687 - INFO - 120517972
+2020-06-09 10:04:19,687 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,687 - INFO - None
+2020-06-09 10:04:19,687 - INFO - 参数的长度:0
+2020-06-09 10:04:19,688 - INFO - 具体参数：
+2020-06-09 10:04:19,689 - INFO - 输入码密码
+2020-06-09 10:04:19,689 - INFO - input
+2020-06-09 10:04:19,689 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:04:19,689 - INFO - 123456
+2020-06-09 10:04:19,689 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,689 - INFO - None
+2020-06-09 10:04:19,689 - INFO - 参数的长度:0
+2020-06-09 10:04:19,689 - INFO - 具体参数：
+2020-06-09 10:04:19,689 - INFO - 停止app
+2020-06-09 10:04:19,690 - INFO - quit
+2020-06-09 10:04:19,690 - INFO - 
+2020-06-09 10:04:19,690 - INFO - 
+2020-06-09 10:04:19,690 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,690 - INFO - None
+2020-06-09 10:04:19,690 - INFO - 参数的长度:0
+2020-06-09 10:04:19,690 - INFO - 具体参数：
+2020-06-09 10:04:19,690 - INFO - 停止appium
+2020-06-09 10:04:19,692 - INFO - closeappium
+2020-06-09 10:04:19,692 - INFO - 
+2020-06-09 10:04:19,692 - INFO - 
+2020-06-09 10:04:19,693 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:19,693 - INFO - None
+2020-06-09 10:04:19,693 - INFO - 参数的长度:0
+2020-06-09 10:04:19,705 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:04:19,705 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:04:19,706 - INFO - 开始发送邮件
+2020-06-09 10:04:19,706 - INFO - 结束用例
+2020-06-09 10:04:48,740 - INFO - 具体参数：
+2020-06-09 10:04:48,741 - INFO - open_browser
+2020-06-09 10:04:48,741 - INFO - chrome
+2020-06-09 10:04:48,741 - INFO - 
+2020-06-09 10:04:48,741 - INFO - 
+2020-06-09 10:04:48,741 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:04:48,741 - INFO - <bound method Browser.open_browser of <web.Web.Browser object at 0x000001C226CBC288>>
+2020-06-09 10:04:48,741 - INFO - 参数的长度:2
+2020-06-09 10:04:48,741 - INFO - 111*********************** 开始执行第1个sheet用例 **********************
+2020-06-09 10:06:26,255 - INFO - 具体参数：
+2020-06-09 10:06:26,256 - INFO - 
+2020-06-09 10:06:26,256 - INFO -  
+2020-06-09 10:06:26,256 - INFO - 
+2020-06-09 10:06:26,256 - INFO - 
+2020-06-09 10:06:26,256 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,256 - INFO - None
+2020-06-09 10:06:26,256 - INFO - 参数的长度:0
+2020-06-09 10:06:26,256 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,256 - INFO - None
+2020-06-09 10:06:26,256 - INFO - 0
+2020-06-09 10:06:26,256 - INFO - ['', ' ', '', '']
+2020-06-09 10:06:26,257 - INFO - 具体参数：
+2020-06-09 10:06:26,258 - INFO - 启动模拟器mumu
+2020-06-09 10:06:26,258 - INFO - runcmd
+2020-06-09 10:06:26,258 - INFO - D:\Program Files\Microvirt\MEmu\MEmu.exe
+2020-06-09 10:06:26,258 - INFO - 15
+2020-06-09 10:06:26,258 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,258 - INFO - None
+2020-06-09 10:06:26,258 - INFO - 参数的长度:0
+2020-06-09 10:06:26,258 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,258 - INFO - None
+2020-06-09 10:06:26,258 - INFO - 0
+2020-06-09 10:06:26,258 - INFO - ['启动模拟器mumu', 'runcmd', 'D:\\Program Files\\Microvirt\\MEmu\\MEmu.exe', '15']
+2020-06-09 10:06:26,259 - INFO - 具体参数：
+2020-06-09 10:06:26,259 - INFO - adb连接模拟器
+2020-06-09 10:06:26,259 - INFO - runcmd
+2020-06-09 10:06:26,260 - INFO - adb connect 127.0.0.1:21503
+2020-06-09 10:06:26,260 - INFO - 5
+2020-06-09 10:06:26,260 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,260 - INFO - None
+2020-06-09 10:06:26,260 - INFO - 参数的长度:0
+2020-06-09 10:06:26,260 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,260 - INFO - None
+2020-06-09 10:06:26,260 - INFO - 0
+2020-06-09 10:06:26,260 - INFO - ['adb连接模拟器', 'runcmd', 'adb connect 127.0.0.1:21503', '5']
+2020-06-09 10:06:26,260 - INFO - 具体参数：
+2020-06-09 10:06:26,261 - INFO - 启动appium
+2020-06-09 10:06:26,261 - INFO - runappium
+2020-06-09 10:06:26,261 - INFO - 
+2020-06-09 10:06:26,261 - INFO - 
+2020-06-09 10:06:26,261 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,261 - INFO - None
+2020-06-09 10:06:26,261 - INFO - 参数的长度:0
+2020-06-09 10:06:26,261 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,261 - INFO - None
+2020-06-09 10:06:26,261 - INFO - 0
+2020-06-09 10:06:26,261 - INFO - ['启动appium', 'runappium', '', '']
+2020-06-09 10:06:26,262 - INFO - 具体参数：
+2020-06-09 10:06:26,262 - INFO - 打开APP
+2020-06-09 10:06:26,262 - INFO - runapp
+2020-06-09 10:06:26,262 - INFO - { "platformName": "Android",
+  "platformVersion": "7.1.2",
+  "deviceName": "127.0.0.1:21503",
+  "appPackage": "com.tencent.mobileqq",
+  "appActivity": ".activity.SplashActivity",
+  "noReset": "true",
+  "unicodeKeyboard": "true",
+  "resetKeyboard": "true"}
+2020-06-09 10:06:26,262 - INFO - 
+2020-06-09 10:06:26,262 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,262 - INFO - None
+2020-06-09 10:06:26,262 - INFO - 参数的长度:0
+2020-06-09 10:06:26,262 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,262 - INFO - None
+2020-06-09 10:06:26,262 - INFO - 0
+2020-06-09 10:06:26,263 - INFO - ['打开APP', 'runapp', '{ "platformName": "Android",\n  "platformVersion": "7.1.2",\n  "deviceName": "127.0.0.1:21503",\n  "appPackage": "com.tencent.mobileqq",\n  "appActivity": ".activity.SplashActivity",\n  "noReset": "true",\n  "unicodeKeyboard": "true",\n  "resetKeyboard": "true"}', '']
+2020-06-09 10:06:26,263 - INFO - 具体参数：
+2020-06-09 10:06:26,263 - INFO - 
+2020-06-09 10:06:26,263 - INFO -  
+2020-06-09 10:06:26,263 - INFO - 
+2020-06-09 10:06:26,263 - INFO - 
+2020-06-09 10:06:26,263 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,263 - INFO - None
+2020-06-09 10:06:26,264 - INFO - 参数的长度:0
+2020-06-09 10:06:26,264 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,264 - INFO - None
+2020-06-09 10:06:26,264 - INFO - 0
+2020-06-09 10:06:26,264 - INFO - ['', ' ', '', '']
+2020-06-09 10:06:26,264 - INFO - 具体参数：
+2020-06-09 10:06:26,264 - INFO - 登陆
+2020-06-09 10:06:26,264 - INFO - click
+2020-06-09 10:06:26,264 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:06:26,265 - INFO - 
+2020-06-09 10:06:26,265 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,265 - INFO - None
+2020-06-09 10:06:26,265 - INFO - 参数的长度:0
+2020-06-09 10:06:26,265 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,265 - INFO - None
+2020-06-09 10:06:26,265 - INFO - 0
+2020-06-09 10:06:26,265 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:06:26,273 - INFO - 具体参数：
+2020-06-09 10:06:26,273 - INFO - 输入用户名
+2020-06-09 10:06:26,273 - INFO - input
+2020-06-09 10:06:26,273 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:06:26,273 - INFO - 120517972
+2020-06-09 10:06:26,273 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,273 - INFO - None
+2020-06-09 10:06:26,273 - INFO - 参数的长度:0
+2020-06-09 10:06:26,273 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,273 - INFO - None
+2020-06-09 10:06:26,274 - INFO - 0
+2020-06-09 10:06:26,274 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:06:26,274 - INFO - 具体参数：
+2020-06-09 10:06:26,274 - INFO - 输入码密码
+2020-06-09 10:06:26,274 - INFO - input
+2020-06-09 10:06:26,274 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:06:26,274 - INFO - 123456
+2020-06-09 10:06:26,274 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,275 - INFO - None
+2020-06-09 10:06:26,275 - INFO - 参数的长度:0
+2020-06-09 10:06:26,275 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,275 - INFO - None
+2020-06-09 10:06:26,275 - INFO - 0
+2020-06-09 10:06:26,275 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:06:26,275 - INFO - 具体参数：
+2020-06-09 10:06:26,275 - INFO - 停止app
+2020-06-09 10:06:26,275 - INFO - quit
+2020-06-09 10:06:26,276 - INFO - 
+2020-06-09 10:06:26,276 - INFO - 
+2020-06-09 10:06:26,276 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,276 - INFO - None
+2020-06-09 10:06:26,276 - INFO - 参数的长度:0
+2020-06-09 10:06:26,276 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,276 - INFO - None
+2020-06-09 10:06:26,276 - INFO - 0
+2020-06-09 10:06:26,276 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:06:26,278 - INFO - 具体参数：
+2020-06-09 10:06:26,278 - INFO - 停止appium
+2020-06-09 10:06:26,278 - INFO - closeappium
+2020-06-09 10:06:26,278 - INFO - 
+2020-06-09 10:06:26,278 - INFO - 
+2020-06-09 10:06:26,278 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:06:26,278 - INFO - None
+2020-06-09 10:06:26,278 - INFO - 参数的长度:0
+2020-06-09 10:06:26,279 - INFO - run中传递进来的参数：
+2020-06-09 10:06:26,279 - INFO - None
+2020-06-09 10:06:26,279 - INFO - 0
+2020-06-09 10:06:26,279 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:06:26,288 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:06:26,288 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:06:26,289 - INFO - 开始发送邮件
+2020-06-09 10:06:26,289 - INFO - 结束用例
+2020-06-09 10:08:47,345 - INFO - 具体参数：
+2020-06-09 10:08:47,345 - INFO - 
+2020-06-09 10:08:47,345 - INFO -  
+2020-06-09 10:08:47,345 - INFO - 
+2020-06-09 10:08:47,345 - INFO - 
+2020-06-09 10:08:47,345 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,346 - INFO - None
+2020-06-09 10:08:47,346 - INFO - 参数的长度:0
+2020-06-09 10:08:47,346 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,346 - INFO - None
+2020-06-09 10:08:47,346 - INFO - 0
+2020-06-09 10:08:47,346 - INFO - ['', ' ', '', '']
+2020-06-09 10:08:47,347 - INFO - 具体参数：
+2020-06-09 10:08:47,347 - INFO - 启动模拟器、appium、app
+2020-06-09 10:08:47,347 - INFO - setup
+2020-06-09 10:08:47,347 - INFO - MuMu
+2020-06-09 10:08:47,347 - INFO - qq.yaml
+2020-06-09 10:08:47,347 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,347 - INFO - None
+2020-06-09 10:08:47,347 - INFO - 参数的长度:0
+2020-06-09 10:08:47,347 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,347 - INFO - None
+2020-06-09 10:08:47,347 - INFO - 0
+2020-06-09 10:08:47,347 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:08:47,348 - INFO - 具体参数：
+2020-06-09 10:08:47,348 - INFO - 
+2020-06-09 10:08:47,348 - INFO -  
+2020-06-09 10:08:47,348 - INFO - 
+2020-06-09 10:08:47,348 - INFO - 
+2020-06-09 10:08:47,348 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,348 - INFO - None
+2020-06-09 10:08:47,348 - INFO - 参数的长度:0
+2020-06-09 10:08:47,348 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,348 - INFO - None
+2020-06-09 10:08:47,348 - INFO - 0
+2020-06-09 10:08:47,349 - INFO - ['', ' ', '', '']
+2020-06-09 10:08:47,349 - INFO - 具体参数：
+2020-06-09 10:08:47,349 - INFO - 登陆
+2020-06-09 10:08:47,349 - INFO - click
+2020-06-09 10:08:47,349 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:08:47,349 - INFO - 
+2020-06-09 10:08:47,349 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,349 - INFO - None
+2020-06-09 10:08:47,349 - INFO - 参数的长度:0
+2020-06-09 10:08:47,349 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,349 - INFO - None
+2020-06-09 10:08:47,350 - INFO - 0
+2020-06-09 10:08:47,350 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:08:47,350 - INFO - 具体参数：
+2020-06-09 10:08:47,350 - INFO - 输入用户名
+2020-06-09 10:08:47,350 - INFO - input
+2020-06-09 10:08:47,350 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:08:47,350 - INFO - 120517972
+2020-06-09 10:08:47,350 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,350 - INFO - None
+2020-06-09 10:08:47,350 - INFO - 参数的长度:0
+2020-06-09 10:08:47,351 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,351 - INFO - None
+2020-06-09 10:08:47,352 - INFO - 0
+2020-06-09 10:08:47,352 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:08:47,353 - INFO - 具体参数：
+2020-06-09 10:08:47,353 - INFO - 输入码密码
+2020-06-09 10:08:47,353 - INFO - input
+2020-06-09 10:08:47,353 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:08:47,353 - INFO - 123456
+2020-06-09 10:08:47,353 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,353 - INFO - None
+2020-06-09 10:08:47,353 - INFO - 参数的长度:0
+2020-06-09 10:08:47,353 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,353 - INFO - None
+2020-06-09 10:08:47,353 - INFO - 0
+2020-06-09 10:08:47,354 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:08:47,354 - INFO - 具体参数：
+2020-06-09 10:08:47,354 - INFO - 停止app
+2020-06-09 10:08:47,354 - INFO - quit
+2020-06-09 10:08:47,354 - INFO - 
+2020-06-09 10:08:47,354 - INFO - 
+2020-06-09 10:08:47,354 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,354 - INFO - None
+2020-06-09 10:08:47,354 - INFO - 参数的长度:0
+2020-06-09 10:08:47,355 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,355 - INFO - None
+2020-06-09 10:08:47,355 - INFO - 0
+2020-06-09 10:08:47,355 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:08:47,355 - INFO - 具体参数：
+2020-06-09 10:08:47,355 - INFO - 停止appium
+2020-06-09 10:08:47,355 - INFO - closeappium
+2020-06-09 10:08:47,355 - INFO - 
+2020-06-09 10:08:47,355 - INFO - 
+2020-06-09 10:08:47,355 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:08:47,356 - INFO - None
+2020-06-09 10:08:47,356 - INFO - 参数的长度:0
+2020-06-09 10:08:47,356 - INFO - run中传递进来的参数：
+2020-06-09 10:08:47,356 - INFO - None
+2020-06-09 10:08:47,356 - INFO - 0
+2020-06-09 10:08:47,356 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:08:47,364 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:08:47,364 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:08:47,365 - INFO - 开始发送邮件
+2020-06-09 10:08:47,365 - INFO - 结束用例
+2020-06-09 10:11:11,729 - INFO - 具体参数：
+2020-06-09 10:11:11,729 - INFO - 
+2020-06-09 10:11:11,729 - INFO -  
+2020-06-09 10:11:11,729 - INFO - 
+2020-06-09 10:11:11,730 - INFO - 
+2020-06-09 10:11:11,730 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,730 - INFO - None
+2020-06-09 10:11:11,730 - INFO - 参数的长度:0
+2020-06-09 10:11:11,730 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,730 - INFO - None
+2020-06-09 10:11:11,730 - INFO - 0
+2020-06-09 10:11:11,730 - INFO - ['', ' ', '', '']
+2020-06-09 10:11:11,731 - INFO - 具体参数：
+2020-06-09 10:11:11,731 - INFO - 启动模拟器、appium、app
+2020-06-09 10:11:11,731 - INFO - setup
+2020-06-09 10:11:11,731 - INFO - MuMu
+2020-06-09 10:11:11,731 - INFO - qq.yaml
+2020-06-09 10:11:11,731 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,731 - INFO - None
+2020-06-09 10:11:11,731 - INFO - 参数的长度:0
+2020-06-09 10:11:11,731 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,732 - INFO - None
+2020-06-09 10:11:11,732 - INFO - 0
+2020-06-09 10:11:11,732 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:11:11,732 - INFO - 具体参数：
+2020-06-09 10:11:11,732 - INFO - 
+2020-06-09 10:11:11,732 - INFO -  
+2020-06-09 10:11:11,732 - INFO - 
+2020-06-09 10:11:11,732 - INFO - 
+2020-06-09 10:11:11,732 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,732 - INFO - None
+2020-06-09 10:11:11,733 - INFO - 参数的长度:0
+2020-06-09 10:11:11,733 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,733 - INFO - None
+2020-06-09 10:11:11,733 - INFO - 0
+2020-06-09 10:11:11,733 - INFO - ['', ' ', '', '']
+2020-06-09 10:11:11,733 - INFO - 具体参数：
+2020-06-09 10:11:11,733 - INFO - 登陆
+2020-06-09 10:11:11,733 - INFO - click
+2020-06-09 10:11:11,733 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:11:11,734 - INFO - 
+2020-06-09 10:11:11,734 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,734 - INFO - None
+2020-06-09 10:11:11,734 - INFO - 参数的长度:0
+2020-06-09 10:11:11,734 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,734 - INFO - None
+2020-06-09 10:11:11,734 - INFO - 0
+2020-06-09 10:11:11,734 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:11:11,734 - INFO - 具体参数：
+2020-06-09 10:11:11,734 - INFO - 输入用户名
+2020-06-09 10:11:11,734 - INFO - input
+2020-06-09 10:11:11,735 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:11:11,735 - INFO - 120517972
+2020-06-09 10:11:11,735 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,735 - INFO - None
+2020-06-09 10:11:11,735 - INFO - 参数的长度:0
+2020-06-09 10:11:11,735 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,735 - INFO - None
+2020-06-09 10:11:11,735 - INFO - 0
+2020-06-09 10:11:11,735 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:11:11,735 - INFO - 具体参数：
+2020-06-09 10:11:11,736 - INFO - 输入码密码
+2020-06-09 10:11:11,736 - INFO - input
+2020-06-09 10:11:11,736 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:11:11,736 - INFO - 123456
+2020-06-09 10:11:11,736 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,736 - INFO - None
+2020-06-09 10:11:11,736 - INFO - 参数的长度:0
+2020-06-09 10:11:11,736 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,736 - INFO - None
+2020-06-09 10:11:11,737 - INFO - 0
+2020-06-09 10:11:11,737 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:11:11,744 - INFO - 具体参数：
+2020-06-09 10:11:11,744 - INFO - 停止app
+2020-06-09 10:11:11,744 - INFO - quit
+2020-06-09 10:11:11,744 - INFO - 
+2020-06-09 10:11:11,748 - INFO - 
+2020-06-09 10:11:11,748 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,748 - INFO - None
+2020-06-09 10:11:11,748 - INFO - 参数的长度:0
+2020-06-09 10:11:11,748 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,748 - INFO - None
+2020-06-09 10:11:11,748 - INFO - 0
+2020-06-09 10:11:11,749 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:11:11,749 - INFO - 具体参数：
+2020-06-09 10:11:11,749 - INFO - 停止appium
+2020-06-09 10:11:11,749 - INFO - closeappium
+2020-06-09 10:11:11,749 - INFO - 
+2020-06-09 10:11:11,749 - INFO - 
+2020-06-09 10:11:11,749 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:11:11,749 - INFO - None
+2020-06-09 10:11:11,750 - INFO - 参数的长度:0
+2020-06-09 10:11:11,750 - INFO - run中传递进来的参数：
+2020-06-09 10:11:11,750 - INFO - None
+2020-06-09 10:11:11,750 - INFO - 0
+2020-06-09 10:11:11,750 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:11:11,761 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:11:11,762 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:11:11,762 - INFO - 开始发送邮件
+2020-06-09 10:11:11,762 - INFO - 结束用例
+2020-06-09 10:12:34,084 - INFO - 传递的值是：mumuQQ
+2020-06-09 10:12:34,084 - INFO - 具体参数：
+2020-06-09 10:12:34,084 - INFO - 
+2020-06-09 10:12:34,084 - INFO -  
+2020-06-09 10:12:34,084 - INFO - 
+2020-06-09 10:12:34,084 - INFO - 
+2020-06-09 10:12:34,085 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,085 - INFO - None
+2020-06-09 10:12:34,085 - INFO - 参数的长度:0
+2020-06-09 10:12:34,085 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,085 - INFO - None
+2020-06-09 10:12:34,085 - INFO - 0
+2020-06-09 10:12:34,085 - INFO - ['', ' ', '', '']
+2020-06-09 10:12:34,086 - INFO - 具体参数：
+2020-06-09 10:12:34,086 - INFO - 启动模拟器、appium、app
+2020-06-09 10:12:34,086 - INFO - setup
+2020-06-09 10:12:34,086 - INFO - MuMu
+2020-06-09 10:12:34,086 - INFO - qq.yaml
+2020-06-09 10:12:34,086 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,086 - INFO - None
+2020-06-09 10:12:34,086 - INFO - 参数的长度:0
+2020-06-09 10:12:34,086 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,086 - INFO - None
+2020-06-09 10:12:34,087 - INFO - 0
+2020-06-09 10:12:34,087 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:12:34,087 - INFO - 具体参数：
+2020-06-09 10:12:34,087 - INFO - 
+2020-06-09 10:12:34,087 - INFO -  
+2020-06-09 10:12:34,087 - INFO - 
+2020-06-09 10:12:34,087 - INFO - 
+2020-06-09 10:12:34,087 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,088 - INFO - None
+2020-06-09 10:12:34,088 - INFO - 参数的长度:0
+2020-06-09 10:12:34,088 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,088 - INFO - None
+2020-06-09 10:12:34,088 - INFO - 0
+2020-06-09 10:12:34,088 - INFO - ['', ' ', '', '']
+2020-06-09 10:12:34,090 - INFO - 具体参数：
+2020-06-09 10:12:34,090 - INFO - 登陆
+2020-06-09 10:12:34,090 - INFO - click
+2020-06-09 10:12:34,091 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:12:34,091 - INFO - 
+2020-06-09 10:12:34,091 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,091 - INFO - None
+2020-06-09 10:12:34,091 - INFO - 参数的长度:0
+2020-06-09 10:12:34,091 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,091 - INFO - None
+2020-06-09 10:12:34,091 - INFO - 0
+2020-06-09 10:12:34,091 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:12:34,092 - INFO - 具体参数：
+2020-06-09 10:12:34,092 - INFO - 输入用户名
+2020-06-09 10:12:34,092 - INFO - input
+2020-06-09 10:12:34,092 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:12:34,092 - INFO - 120517972
+2020-06-09 10:12:34,092 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,092 - INFO - None
+2020-06-09 10:12:34,092 - INFO - 参数的长度:0
+2020-06-09 10:12:34,092 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,092 - INFO - None
+2020-06-09 10:12:34,092 - INFO - 0
+2020-06-09 10:12:34,093 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:12:34,093 - INFO - 具体参数：
+2020-06-09 10:12:34,093 - INFO - 输入码密码
+2020-06-09 10:12:34,093 - INFO - input
+2020-06-09 10:12:34,093 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:12:34,093 - INFO - 123456
+2020-06-09 10:12:34,093 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,093 - INFO - None
+2020-06-09 10:12:34,093 - INFO - 参数的长度:0
+2020-06-09 10:12:34,094 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,094 - INFO - None
+2020-06-09 10:12:34,094 - INFO - 0
+2020-06-09 10:12:34,094 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:12:34,095 - INFO - 具体参数：
+2020-06-09 10:12:34,095 - INFO - 停止app
+2020-06-09 10:12:34,096 - INFO - quit
+2020-06-09 10:12:34,096 - INFO - 
+2020-06-09 10:12:34,096 - INFO - 
+2020-06-09 10:12:34,096 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,096 - INFO - None
+2020-06-09 10:12:34,096 - INFO - 参数的长度:0
+2020-06-09 10:12:34,096 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,096 - INFO - None
+2020-06-09 10:12:34,096 - INFO - 0
+2020-06-09 10:12:34,096 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:12:34,097 - INFO - 具体参数：
+2020-06-09 10:12:34,097 - INFO - 停止appium
+2020-06-09 10:12:34,097 - INFO - closeappium
+2020-06-09 10:12:34,097 - INFO - 
+2020-06-09 10:12:34,097 - INFO - 
+2020-06-09 10:12:34,097 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:12:34,097 - INFO - None
+2020-06-09 10:12:34,097 - INFO - 参数的长度:0
+2020-06-09 10:12:34,097 - INFO - run中传递进来的参数：
+2020-06-09 10:12:34,097 - INFO - None
+2020-06-09 10:12:34,097 - INFO - 0
+2020-06-09 10:12:34,097 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:12:34,105 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:12:34,105 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:12:34,106 - INFO - 开始发送邮件
+2020-06-09 10:12:34,106 - INFO - 结束用例
+2020-06-09 10:14:17,919 - INFO - 传递的值是：mumuQQ
+2020-06-09 10:14:17,919 - INFO - 具体参数：
+2020-06-09 10:14:17,919 - INFO - 
+2020-06-09 10:14:17,919 - INFO -  
+2020-06-09 10:14:17,919 - INFO - 
+2020-06-09 10:14:17,919 - INFO - 
+2020-06-09 10:14:17,919 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,919 - INFO - None
+2020-06-09 10:14:17,919 - INFO - 参数的长度:0
+2020-06-09 10:14:17,919 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,920 - INFO - None
+2020-06-09 10:14:17,920 - INFO - 0
+2020-06-09 10:14:17,920 - INFO - ['', ' ', '', '']
+2020-06-09 10:14:17,920 - INFO - 具体参数：
+2020-06-09 10:14:17,921 - INFO - 启动模拟器、appium、app
+2020-06-09 10:14:17,921 - INFO - setup
+2020-06-09 10:14:17,921 - INFO - MuMu
+2020-06-09 10:14:17,921 - INFO - qq.yaml
+2020-06-09 10:14:17,921 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,921 - INFO - None
+2020-06-09 10:14:17,921 - INFO - 参数的长度:0
+2020-06-09 10:14:17,921 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,921 - INFO - None
+2020-06-09 10:14:17,921 - INFO - 0
+2020-06-09 10:14:17,921 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:14:17,922 - INFO - 具体参数：
+2020-06-09 10:14:17,922 - INFO - 
+2020-06-09 10:14:17,922 - INFO -  
+2020-06-09 10:14:17,922 - INFO - 
+2020-06-09 10:14:17,922 - INFO - 
+2020-06-09 10:14:17,922 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,922 - INFO - None
+2020-06-09 10:14:17,922 - INFO - 参数的长度:0
+2020-06-09 10:14:17,922 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,922 - INFO - None
+2020-06-09 10:14:17,923 - INFO - 0
+2020-06-09 10:14:17,925 - INFO - ['', ' ', '', '']
+2020-06-09 10:14:17,925 - INFO - 具体参数：
+2020-06-09 10:14:17,925 - INFO - 登陆
+2020-06-09 10:14:17,925 - INFO - click
+2020-06-09 10:14:17,925 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:14:17,926 - INFO - 
+2020-06-09 10:14:17,926 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,926 - INFO - None
+2020-06-09 10:14:17,926 - INFO - 参数的长度:0
+2020-06-09 10:14:17,926 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,926 - INFO - None
+2020-06-09 10:14:17,926 - INFO - 0
+2020-06-09 10:14:17,926 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:14:17,926 - INFO - 具体参数：
+2020-06-09 10:14:17,926 - INFO - 输入用户名
+2020-06-09 10:14:17,927 - INFO - input
+2020-06-09 10:14:17,927 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:14:17,927 - INFO - 120517972
+2020-06-09 10:14:17,927 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,927 - INFO - None
+2020-06-09 10:14:17,927 - INFO - 参数的长度:0
+2020-06-09 10:14:17,927 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,927 - INFO - None
+2020-06-09 10:14:17,927 - INFO - 0
+2020-06-09 10:14:17,927 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:14:17,928 - INFO - 具体参数：
+2020-06-09 10:14:17,928 - INFO - 输入码密码
+2020-06-09 10:14:17,928 - INFO - input
+2020-06-09 10:14:17,928 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:14:17,928 - INFO - 123456
+2020-06-09 10:14:17,928 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,928 - INFO - None
+2020-06-09 10:14:17,928 - INFO - 参数的长度:0
+2020-06-09 10:14:17,928 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,928 - INFO - None
+2020-06-09 10:14:17,930 - INFO - 0
+2020-06-09 10:14:17,930 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:14:17,930 - INFO - 具体参数：
+2020-06-09 10:14:17,930 - INFO - 停止app
+2020-06-09 10:14:17,930 - INFO - quit
+2020-06-09 10:14:17,930 - INFO - 
+2020-06-09 10:14:17,930 - INFO - 
+2020-06-09 10:14:17,931 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,931 - INFO - None
+2020-06-09 10:14:17,931 - INFO - 参数的长度:0
+2020-06-09 10:14:17,931 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,931 - INFO - None
+2020-06-09 10:14:17,931 - INFO - 0
+2020-06-09 10:14:17,931 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:14:17,931 - INFO - 具体参数：
+2020-06-09 10:14:17,931 - INFO - 停止appium
+2020-06-09 10:14:17,931 - INFO - closeappium
+2020-06-09 10:14:17,932 - INFO - 
+2020-06-09 10:14:17,932 - INFO - 
+2020-06-09 10:14:17,932 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:14:17,932 - INFO - None
+2020-06-09 10:14:17,932 - INFO - 参数的长度:0
+2020-06-09 10:14:17,932 - INFO - run中传递进来的参数：
+2020-06-09 10:14:17,932 - INFO - None
+2020-06-09 10:14:17,932 - INFO - 0
+2020-06-09 10:14:17,932 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:14:17,944 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:14:17,944 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:14:17,945 - INFO - 开始发送邮件
+2020-06-09 10:14:17,945 - INFO - 结束用例
+2020-06-09 10:15:47,861 - INFO - 传递的值是：mumuQQ
+2020-06-09 10:15:47,863 - INFO - 具体参数：
+2020-06-09 10:15:47,865 - INFO - 
+2020-06-09 10:15:47,865 - INFO -  
+2020-06-09 10:15:47,865 - INFO - 
+2020-06-09 10:15:47,866 - INFO - 
+2020-06-09 10:15:47,866 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,866 - INFO - None
+2020-06-09 10:15:47,866 - INFO - 参数的长度:0
+2020-06-09 10:15:47,866 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,866 - INFO - None
+2020-06-09 10:15:47,866 - INFO - 0
+2020-06-09 10:15:47,866 - INFO - ['', ' ', '', '']
+2020-06-09 10:15:47,867 - INFO - 具体参数：
+2020-06-09 10:15:47,867 - INFO - 启动模拟器、appium、app
+2020-06-09 10:15:47,867 - INFO - setup
+2020-06-09 10:15:47,867 - INFO - MuMu
+2020-06-09 10:15:47,867 - INFO - qq.yaml
+2020-06-09 10:15:47,867 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,867 - INFO - None
+2020-06-09 10:15:47,867 - INFO - 参数的长度:0
+2020-06-09 10:15:47,868 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,868 - INFO - None
+2020-06-09 10:15:47,868 - INFO - 0
+2020-06-09 10:15:47,868 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:15:47,868 - INFO - 具体参数：
+2020-06-09 10:15:47,868 - INFO - 
+2020-06-09 10:15:47,868 - INFO -  
+2020-06-09 10:15:47,868 - INFO - 
+2020-06-09 10:15:47,868 - INFO - 
+2020-06-09 10:15:47,869 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,869 - INFO - None
+2020-06-09 10:15:47,869 - INFO - 参数的长度:0
+2020-06-09 10:15:47,869 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,869 - INFO - None
+2020-06-09 10:15:47,869 - INFO - 0
+2020-06-09 10:15:47,869 - INFO - ['', ' ', '', '']
+2020-06-09 10:15:47,869 - INFO - 具体参数：
+2020-06-09 10:15:47,869 - INFO - 登陆
+2020-06-09 10:15:47,869 - INFO - click
+2020-06-09 10:15:47,870 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:15:47,870 - INFO - 
+2020-06-09 10:15:47,870 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,870 - INFO - None
+2020-06-09 10:15:47,870 - INFO - 参数的长度:0
+2020-06-09 10:15:47,870 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,870 - INFO - None
+2020-06-09 10:15:47,870 - INFO - 0
+2020-06-09 10:15:47,870 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:15:47,870 - INFO - 具体参数：
+2020-06-09 10:15:47,870 - INFO - 输入用户名
+2020-06-09 10:15:47,871 - INFO - input
+2020-06-09 10:15:47,871 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:15:47,871 - INFO - 120517972
+2020-06-09 10:15:47,871 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,871 - INFO - None
+2020-06-09 10:15:47,871 - INFO - 参数的长度:0
+2020-06-09 10:15:47,871 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,871 - INFO - None
+2020-06-09 10:15:47,871 - INFO - 0
+2020-06-09 10:15:47,871 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:15:47,871 - INFO - 具体参数：
+2020-06-09 10:15:47,872 - INFO - 输入码密码
+2020-06-09 10:15:47,872 - INFO - input
+2020-06-09 10:15:47,872 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:15:47,872 - INFO - 123456
+2020-06-09 10:15:47,872 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,872 - INFO - None
+2020-06-09 10:15:47,872 - INFO - 参数的长度:0
+2020-06-09 10:15:47,872 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,872 - INFO - None
+2020-06-09 10:15:47,872 - INFO - 0
+2020-06-09 10:15:47,872 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:15:47,873 - INFO - 具体参数：
+2020-06-09 10:15:47,873 - INFO - 停止app
+2020-06-09 10:15:47,873 - INFO - quit
+2020-06-09 10:15:47,873 - INFO - 
+2020-06-09 10:15:47,873 - INFO - 
+2020-06-09 10:15:47,873 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,873 - INFO - None
+2020-06-09 10:15:47,873 - INFO - 参数的长度:0
+2020-06-09 10:15:47,873 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,874 - INFO - None
+2020-06-09 10:15:47,876 - INFO - 0
+2020-06-09 10:15:47,876 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:15:47,876 - INFO - 具体参数：
+2020-06-09 10:15:47,876 - INFO - 停止appium
+2020-06-09 10:15:47,876 - INFO - closeappium
+2020-06-09 10:15:47,876 - INFO - 
+2020-06-09 10:15:47,877 - INFO - 
+2020-06-09 10:15:47,877 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:15:47,877 - INFO - None
+2020-06-09 10:15:47,877 - INFO - 参数的长度:0
+2020-06-09 10:15:47,877 - INFO - run中传递进来的参数：
+2020-06-09 10:15:47,877 - INFO - None
+2020-06-09 10:15:47,877 - INFO - 0
+2020-06-09 10:15:47,877 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:15:47,885 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:15:47,886 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:15:47,886 - INFO - 开始发送邮件
+2020-06-09 10:15:47,886 - INFO - 结束用例
+2020-06-09 10:16:09,088 - INFO - 传递的值是：mumuQQ
+2020-06-09 10:16:09,088 - INFO - 具体参数：
+2020-06-09 10:16:09,088 - INFO - 
+2020-06-09 10:16:09,088 - INFO -  
+2020-06-09 10:16:09,088 - INFO - 
+2020-06-09 10:16:09,088 - INFO - 
+2020-06-09 10:16:09,088 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,089 - INFO - None
+2020-06-09 10:16:09,089 - INFO - 参数的长度:0
+2020-06-09 10:16:09,089 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,089 - INFO - None
+2020-06-09 10:16:09,089 - INFO - 0
+2020-06-09 10:16:09,089 - INFO - ['', ' ', '', '']
+2020-06-09 10:16:09,090 - INFO - 具体参数：
+2020-06-09 10:16:09,090 - INFO - 启动模拟器、appium、app
+2020-06-09 10:16:09,090 - INFO - setup
+2020-06-09 10:16:09,090 - INFO - MuMu
+2020-06-09 10:16:09,090 - INFO - qq.yaml
+2020-06-09 10:16:09,090 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,090 - INFO - None
+2020-06-09 10:16:09,090 - INFO - 参数的长度:0
+2020-06-09 10:16:09,090 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,090 - INFO - None
+2020-06-09 10:16:09,090 - INFO - 0
+2020-06-09 10:16:09,090 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:16:09,091 - INFO - 具体参数：
+2020-06-09 10:16:09,091 - INFO - 
+2020-06-09 10:16:09,091 - INFO -  
+2020-06-09 10:16:09,091 - INFO - 
+2020-06-09 10:16:09,092 - INFO - 
+2020-06-09 10:16:09,092 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,092 - INFO - None
+2020-06-09 10:16:09,092 - INFO - 参数的长度:0
+2020-06-09 10:16:09,092 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,092 - INFO - None
+2020-06-09 10:16:09,092 - INFO - 0
+2020-06-09 10:16:09,093 - INFO - ['', ' ', '', '']
+2020-06-09 10:16:09,094 - INFO - 具体参数：
+2020-06-09 10:16:09,094 - INFO - 登陆
+2020-06-09 10:16:09,094 - INFO - click
+2020-06-09 10:16:09,094 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:16:09,094 - INFO - 
+2020-06-09 10:16:09,094 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,094 - INFO - None
+2020-06-09 10:16:09,094 - INFO - 参数的长度:0
+2020-06-09 10:16:09,094 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,094 - INFO - None
+2020-06-09 10:16:09,095 - INFO - 0
+2020-06-09 10:16:09,095 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:16:09,095 - INFO - 具体参数：
+2020-06-09 10:16:09,095 - INFO - 输入用户名
+2020-06-09 10:16:09,095 - INFO - input
+2020-06-09 10:16:09,095 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:16:09,095 - INFO - 120517972
+2020-06-09 10:16:09,095 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,096 - INFO - None
+2020-06-09 10:16:09,096 - INFO - 参数的长度:0
+2020-06-09 10:16:09,096 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,096 - INFO - None
+2020-06-09 10:16:09,096 - INFO - 0
+2020-06-09 10:16:09,096 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:16:09,096 - INFO - 具体参数：
+2020-06-09 10:16:09,096 - INFO - 输入码密码
+2020-06-09 10:16:09,096 - INFO - input
+2020-06-09 10:16:09,097 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:16:09,097 - INFO - 123456
+2020-06-09 10:16:09,097 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,097 - INFO - None
+2020-06-09 10:16:09,097 - INFO - 参数的长度:0
+2020-06-09 10:16:09,097 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,097 - INFO - None
+2020-06-09 10:16:09,097 - INFO - 0
+2020-06-09 10:16:09,097 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:16:09,097 - INFO - 具体参数：
+2020-06-09 10:16:09,097 - INFO - 停止app
+2020-06-09 10:16:09,098 - INFO - quit
+2020-06-09 10:16:09,098 - INFO - 
+2020-06-09 10:16:09,098 - INFO - 
+2020-06-09 10:16:09,098 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,098 - INFO - None
+2020-06-09 10:16:09,098 - INFO - 参数的长度:0
+2020-06-09 10:16:09,098 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,098 - INFO - None
+2020-06-09 10:16:09,098 - INFO - 0
+2020-06-09 10:16:09,098 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:16:09,099 - INFO - 具体参数：
+2020-06-09 10:16:09,099 - INFO - 停止appium
+2020-06-09 10:16:09,099 - INFO - closeappium
+2020-06-09 10:16:09,099 - INFO - 
+2020-06-09 10:16:09,099 - INFO - 
+2020-06-09 10:16:09,099 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:16:09,099 - INFO - None
+2020-06-09 10:16:09,099 - INFO - 参数的长度:0
+2020-06-09 10:16:09,099 - INFO - run中传递进来的参数：
+2020-06-09 10:16:09,099 - INFO - None
+2020-06-09 10:16:09,099 - INFO - 0
+2020-06-09 10:16:09,099 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:16:09,107 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:16:09,108 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:16:09,113 - INFO - 开始发送邮件
+2020-06-09 10:16:09,113 - INFO - 结束用例
+2020-06-09 10:18:19,356 - INFO - 传递的值是：mumuQQ
+2020-06-09 10:18:19,356 - INFO - 具体参数：
+2020-06-09 10:18:19,356 - INFO - 
+2020-06-09 10:18:19,356 - INFO -  
+2020-06-09 10:18:19,356 - INFO - 
+2020-06-09 10:18:19,356 - INFO - 
+2020-06-09 10:18:19,357 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,357 - INFO - None
+2020-06-09 10:18:19,357 - INFO - 参数的长度:0
+2020-06-09 10:18:19,357 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,357 - INFO - None
+2020-06-09 10:18:19,357 - INFO - 0
+2020-06-09 10:18:19,357 - INFO - ['', ' ', '', '']
+2020-06-09 10:18:19,358 - INFO - 具体参数：
+2020-06-09 10:18:19,358 - INFO - 启动模拟器、appium、app
+2020-06-09 10:18:19,358 - INFO - setup
+2020-06-09 10:18:19,358 - INFO - MuMu
+2020-06-09 10:18:19,358 - INFO - qq.yaml
+2020-06-09 10:18:19,358 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,358 - INFO - None
+2020-06-09 10:18:19,358 - INFO - 参数的长度:0
+2020-06-09 10:18:19,358 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,358 - INFO - None
+2020-06-09 10:18:19,359 - INFO - 0
+2020-06-09 10:18:19,359 - INFO - ['启动模拟器、appium、app', 'setup', 'MuMu', 'qq.yaml']
+2020-06-09 10:18:19,359 - INFO - 具体参数：
+2020-06-09 10:18:19,359 - INFO - 
+2020-06-09 10:18:19,359 - INFO -  
+2020-06-09 10:18:19,359 - INFO - 
+2020-06-09 10:18:19,360 - INFO - 
+2020-06-09 10:18:19,360 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,360 - INFO - None
+2020-06-09 10:18:19,360 - INFO - 参数的长度:0
+2020-06-09 10:18:19,360 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,360 - INFO - None
+2020-06-09 10:18:19,360 - INFO - 0
+2020-06-09 10:18:19,360 - INFO - ['', ' ', '', '']
+2020-06-09 10:18:19,361 - INFO - 具体参数：
+2020-06-09 10:18:19,361 - INFO - 登陆
+2020-06-09 10:18:19,361 - INFO - click
+2020-06-09 10:18:19,361 - INFO - com.tencent.mobileqq:id/btn_login
+2020-06-09 10:18:19,361 - INFO - 
+2020-06-09 10:18:19,361 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,361 - INFO - None
+2020-06-09 10:18:19,361 - INFO - 参数的长度:0
+2020-06-09 10:18:19,361 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,361 - INFO - None
+2020-06-09 10:18:19,361 - INFO - 0
+2020-06-09 10:18:19,361 - INFO - ['登陆', 'click', 'com.tencent.mobileqq:id/btn_login', '']
+2020-06-09 10:18:19,362 - INFO - 具体参数：
+2020-06-09 10:18:19,362 - INFO - 输入用户名
+2020-06-09 10:18:19,362 - INFO - input
+2020-06-09 10:18:19,362 - INFO - //*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:18:19,363 - INFO - 120517972
+2020-06-09 10:18:19,363 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,363 - INFO - None
+2020-06-09 10:18:19,369 - INFO - 参数的长度:0
+2020-06-09 10:18:19,369 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,369 - INFO - None
+2020-06-09 10:18:19,369 - INFO - 0
+2020-06-09 10:18:19,370 - INFO - ['输入用户名', 'input', '//*[@content-desc="请输入QQ号码或手机或邮箱"]', '120517972']
+2020-06-09 10:18:19,370 - INFO - 具体参数：
+2020-06-09 10:18:19,370 - INFO - 输入码密码
+2020-06-09 10:18:19,370 - INFO - input
+2020-06-09 10:18:19,370 - INFO - //*[@content-desc="密码 安全"]
+2020-06-09 10:18:19,370 - INFO - 123456
+2020-06-09 10:18:19,371 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,371 - INFO - None
+2020-06-09 10:18:19,371 - INFO - 参数的长度:0
+2020-06-09 10:18:19,371 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,371 - INFO - None
+2020-06-09 10:18:19,371 - INFO - 0
+2020-06-09 10:18:19,371 - INFO - ['输入码密码', 'input', '//*[@content-desc="密码 安全"]', '123456']
+2020-06-09 10:18:19,371 - INFO - 具体参数：
+2020-06-09 10:18:19,371 - INFO - 停止app
+2020-06-09 10:18:19,372 - INFO - quit
+2020-06-09 10:18:19,372 - INFO - 
+2020-06-09 10:18:19,372 - INFO - 
+2020-06-09 10:18:19,372 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,372 - INFO - None
+2020-06-09 10:18:19,372 - INFO - 参数的长度:0
+2020-06-09 10:18:19,372 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,372 - INFO - None
+2020-06-09 10:18:19,372 - INFO - 0
+2020-06-09 10:18:19,372 - INFO - ['停止app', 'quit', '', '']
+2020-06-09 10:18:19,372 - INFO - 具体参数：
+2020-06-09 10:18:19,373 - INFO - 停止appium
+2020-06-09 10:18:19,373 - INFO - closeappium
+2020-06-09 10:18:19,373 - INFO - 
+2020-06-09 10:18:19,373 - INFO - 
+2020-06-09 10:18:19,373 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:19,373 - INFO - None
+2020-06-09 10:18:19,373 - INFO - 参数的长度:0
+2020-06-09 10:18:19,373 - INFO - run中传递进来的参数：
+2020-06-09 10:18:19,373 - INFO - None
+2020-06-09 10:18:19,373 - INFO - 0
+2020-06-09 10:18:19,373 - INFO - ['停止appium', 'closeappium', '', '']
+2020-06-09 10:18:19,384 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:18:19,384 - ERROR - division by zero
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\common\excelresult.py", line 84, in get_res
+    p = int(totalpass * 10000 / totalcount)
+ZeroDivisionError: division by zero
+2020-06-09 10:18:19,385 - INFO - 开始发送邮件
+2020-06-09 10:18:19,385 - INFO - 结束用例
+2020-06-09 10:18:37,440 - INFO - 传递的是APP了
+2020-06-09 10:18:37,440 - INFO - 传递的值是：APP
+2020-06-09 10:18:37,440 - INFO - 具体参数：
+2020-06-09 10:18:37,440 - INFO - setup
+2020-06-09 10:18:37,440 - INFO - MuMu
+2020-06-09 10:18:37,441 - INFO - qq.yaml
+2020-06-09 10:18:37,441 - INFO - 
+2020-06-09 10:18:37,441 - INFO - 反射获取要执行的关键字，如获取post，get，assert，addheader等
+2020-06-09 10:18:37,441 - INFO - <bound method APP.setup of <app.App.APP object at 0x000002591D70F308>>
+2020-06-09 10:18:37,441 - INFO - 参数的长度:2
+2020-06-09 10:18:37,441 - INFO - run中传递进来的参数：
+2020-06-09 10:18:37,441 - INFO - <bound method APP.setup of <app.App.APP object at 0x000002591D70F308>>
+2020-06-09 10:18:37,441 - INFO - 2
+2020-06-09 10:18:37,441 - INFO - ['setup', 'MuMu', 'qq.yaml', '']
+2020-06-09 10:18:37,441 - INFO - 参数是：MuMu qq.yaml
+2020-06-09 10:18:37,441 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:18:37,451 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:20:40,987 - INFO - 参数是：MuMu qq.yaml
+2020-06-09 10:20:40,988 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:20:40,990 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:21:01,273 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 10:21:05,678 - INFO - adb连接设备成功
+2020-06-09 10:21:34,144 - INFO - 已执行taskkill /F /IM node.exe
+2020-06-09 10:21:34,145 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 166, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:21:34,145 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:21:34,146 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:21:34,146 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:21:34,146 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 161, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:21:34,147 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:21:34,147 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:21:34,147 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 269, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:21:37,343 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 1
+2020-06-09 10:21:37,354 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:21:37,354 - INFO - 开始发送邮件
+2020-06-09 10:21:37,355 - INFO - 结束用例
+2020-06-09 10:26:16,928 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:26:16,931 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:26:38,316 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 10:26:43,082 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 10:26:49,125 - ERROR - 启动APP失败 {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}
+2020-06-09 10:26:49,125 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 142, in runapp
+    caps = eval(caps)
+TypeError: eval() arg 1 must be a string, bytes or code object
+
+2020-06-09 10:26:49,126 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 176, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 181, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:26:49,126 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:26:49,127 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:26:49,127 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:26:49,127 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:26:49,127 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:26:49,127 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:26:49,128 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 279, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:26:52,262 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 10:26:52,270 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:26:52,270 - INFO - 开始发送邮件
+2020-06-09 10:26:52,270 - INFO - 结束用例
+2020-06-09 10:26:56,793 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:26:56,796 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:27:17,064 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 10:27:21,418 - INFO - adb连接设备成功
+2020-06-09 10:27:27,497 - ERROR - 启动APP失败 {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}
+2020-06-09 10:27:27,498 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 142, in runapp
+    caps = eval(caps)
+TypeError: eval() arg 1 must be a string, bytes or code object
+
+2020-06-09 10:27:27,499 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 176, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 181, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:27:27,499 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:27:27,499 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:27:27,500 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:27:27,500 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 171, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:27:27,500 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:27:27,500 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:27:27,500 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 279, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:51:25,180 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:51:25,183 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:51:25,183 - INFO - appium -a 127.0.0.1 -p MuMu -U  --log D:\installation\pythonworkspace\AutomationFramework/log/appium_MuMu.log --no-reset
+2020-06-09 10:51:30,463 - INFO - --------开始启动appium-------------
+2020-06-09 10:51:31,463 - ERROR - 启动appium失败 appium -a 127.0.0.1 -p MuMu -U  --log D:\installation\pythonworkspace\AutomationFramework/log/appium_MuMu.log --no-reset
+2020-06-09 10:51:31,467 - ERROR - Traceback (most recent call last):
+  File "C:\Python37\lib\http\client.py", line 887, in _get_hostport
+    port = int(host[i+1:])
+ValueError: invalid literal for int() with base 10: 'MuMu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 52, in start_appium
+    if self.server_is_running("http://127.0.0.1:" + str(port) + "/wd/hub" + "/status"):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 68, in server_is_running
+    response = urllib.request.urlopen(url, timeout=5)
+  File "C:\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Python37\lib\urllib\request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Python37\lib\urllib\request.py", line 1285, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+  File "C:\Python37\lib\http\client.py", line 851, in __init__
+    (self.host, self.port) = self._get_hostport(host, port)
+  File "C:\Python37\lib\http\client.py", line 892, in _get_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+http.client.InvalidURL: nonnumeric port: 'MuMu'
+
+2020-06-09 10:55:09,222 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:55:09,231 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:55:09,232 - INFO - appium -a 127.0.0.1 -p MuMu -U  --log D:\installation\pythonworkspace\AutomationFramework/log/appium_MuMu.log --no-reset
+2020-06-09 10:55:14,644 - INFO - --------开始启动appium-------------
+2020-06-09 10:55:15,646 - ERROR - 启动appium失败 appium -a 127.0.0.1 -p MuMu -U  --log D:\installation\pythonworkspace\AutomationFramework/log/appium_MuMu.log --no-reset
+2020-06-09 10:55:15,649 - ERROR - Traceback (most recent call last):
+  File "C:\Python37\lib\http\client.py", line 887, in _get_hostport
+    port = int(host[i+1:])
+ValueError: invalid literal for int() with base 10: 'MuMu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 52, in start_appium
+    if self.server_is_running("http://127.0.0.1:" + str(port) + "/wd/hub" + "/status"):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 68, in server_is_running
+    response = urllib.request.urlopen(url, timeout=5)
+  File "C:\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Python37\lib\urllib\request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Python37\lib\urllib\request.py", line 1285, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+  File "C:\Python37\lib\http\client.py", line 851, in __init__
+    (self.host, self.port) = self._get_hostport(host, port)
+  File "C:\Python37\lib\http\client.py", line 892, in _get_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+http.client.InvalidURL: nonnumeric port: 'MuMu'
+
+2020-06-09 10:56:12,653 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:56:12,656 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:56:12,656 - INFO - port:MuMu,udid:
+2020-06-09 10:56:12,656 - INFO - appium -a 127.0.0.1 -p MuMu -U  --log D:\installation\pythonworkspace\AutomationFramework/log/appium_MuMu.log --no-reset
+2020-06-09 10:56:55,025 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:56:55,028 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:56:59,166 - INFO - adb连接设备成功
+2020-06-09 10:56:59,166 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 10:56:59,167 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 10:57:04,542 - INFO - --------开始启动appium-------------
+2020-06-09 10:57:05,569 - INFO - --------appium服务 成功--------------
+2020-06-09 10:57:05,569 - ERROR - 启动APP失败 4723
+2020-06-09 10:57:05,569 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 223, in runapp
+    caps = eval(caps)
+TypeError: eval() arg 1 must be a string, bytes or code object
+
+2020-06-09 10:57:05,570 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 258, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 263, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:57:05,570 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:57:05,571 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 253, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:57:05,571 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:57:05,571 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 253, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:57:05,571 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:57:05,572 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:57:05,572 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 361, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:57:09,347 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 10:57:09,356 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:57:09,356 - INFO - 开始发送邮件
+2020-06-09 10:57:09,357 - INFO - 结束用例
+2020-06-09 10:57:35,002 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:57:35,005 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:57:55,278 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 10:58:00,019 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 10:58:00,020 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 10:58:00,020 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 10:58:05,259 - INFO - --------开始启动appium-------------
+2020-06-09 10:58:06,282 - INFO - --------appium服务 成功--------------
+2020-06-09 10:58:06,283 - ERROR - 启动APP失败 4723
+2020-06-09 10:58:06,283 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 224, in runapp
+    caps = eval(caps)
+TypeError: eval() arg 1 must be a string, bytes or code object
+
+2020-06-09 10:58:06,284 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:58:06,284 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:58:06,284 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:58:06,284 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:58:06,285 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:58:06,285 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:58:06,285 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:58:06,285 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:58:09,421 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 10:58:09,430 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:58:09,430 - INFO - 开始发送邮件
+2020-06-09 10:58:09,431 - INFO - 结束用例
+2020-06-09 10:58:54,182 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 10:58:54,185 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 10:59:14,449 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 10:59:18,843 - INFO - adb连接设备成功
+2020-06-09 10:59:18,843 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 10:59:18,843 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 10:59:24,186 - INFO - --------开始启动appium-------------
+2020-06-09 10:59:25,218 - INFO - --------appium服务 成功--------------
+2020-06-09 10:59:25,219 - ERROR - 启动APP失败 4723
+2020-06-09 10:59:25,219 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 224, in runapp
+    caps = eval(caps)
+TypeError: eval() arg 1 must be a string, bytes or code object
+
+2020-06-09 10:59:25,220 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 10:59:25,220 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 10:59:25,221 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:59:25,221 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 10:59:25,221 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 10:59:25,221 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 10:59:25,222 - INFO - 关闭页面退出驱动失败
+2020-06-09 10:59:25,222 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 10:59:28,430 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 10:59:28,444 - INFO - ['mumuQQ登录与退出']
+2020-06-09 10:59:28,445 - INFO - 开始发送邮件
+2020-06-09 10:59:28,445 - INFO - 结束用例
+2020-06-09 11:59:44,469 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 11:59:44,471 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:00:04,801 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:00:08,842 - INFO - adb连接设备成功
+2020-06-09 12:00:08,842 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:00:08,843 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:00:14,146 - INFO - --------开始启动appium-------------
+2020-06-09 12:00:15,170 - INFO - --------appium服务 成功--------------
+2020-06-09 12:00:15,170 - ERROR - 启动APP失败 4723
+2020-06-09 12:00:15,171 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 228, in runapp
+    t = int(t)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+
+2020-06-09 12:00:15,171 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:00:15,172 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:00:15,172 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:00:15,172 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:00:15,172 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:00:15,173 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:00:15,173 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:00:15,173 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:00:18,303 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 12:00:18,311 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:00:18,311 - INFO - 开始发送邮件
+2020-06-09 12:00:18,311 - INFO - 结束用例
+2020-06-09 12:00:26,817 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:00:26,820 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:00:47,134 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:00:51,942 - INFO - adb连接设备成功
+2020-06-09 12:00:51,942 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:00:51,942 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:00:57,308 - INFO - --------开始启动appium-------------
+2020-06-09 12:00:58,334 - INFO - --------appium服务 成功--------------
+2020-06-09 12:00:58,334 - ERROR - 启动APP失败 4723
+2020-06-09 12:00:58,335 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 228, in runapp
+    t = int(t)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+
+2020-06-09 12:00:58,335 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:00:58,336 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:00:58,336 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:00:58,336 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:00:58,336 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:00:58,337 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:00:58,337 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:00:58,337 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:02:25,697 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:02:25,700 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:02:46,000 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:02:50,827 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 12:02:50,827 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:02:50,827 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:02:56,069 - INFO - --------开始启动appium-------------
+2020-06-09 12:02:57,085 - INFO - --------appium服务 成功--------------
+2020-06-09 12:03:24,199 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:03:24,202 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:03:44,467 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:04:25,323 - INFO - adb连接设备成功
+2020-06-09 12:04:25,323 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:04:25,323 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:04:30,728 - INFO - --------开始启动appium-------------
+2020-06-09 12:04:31,775 - INFO - --------appium服务 成功--------------
+2020-06-09 12:04:43,784 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:04:43,786 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:04:43,786 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:04:43,787 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:04:43,787 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:04:43,787 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:04:43,787 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:04:43,788 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:04:47,074 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 12:04:47,087 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:04:47,087 - INFO - 开始发送邮件
+2020-06-09 12:04:47,087 - INFO - 结束用例
+2020-06-09 12:06:23,298 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:06:23,301 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:06:43,617 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:06:48,369 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 12:06:48,369 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:06:48,369 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:06:53,607 - INFO - --------开始启动appium-------------
+2020-06-09 12:06:54,631 - INFO - --------appium服务 成功--------------
+2020-06-09 12:07:06,118 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:07:06,120 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:07:26,375 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:07:31,611 - INFO - adb连接设备成功
+2020-06-09 12:07:31,611 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:07:31,611 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:07:37,030 - INFO - --------开始启动appium-------------
+2020-06-09 12:07:38,064 - INFO - --------appium服务 成功--------------
+2020-06-09 12:08:05,548 - INFO - 点击元素【com.tencent.mobileqq:id/btn_login】成功
+2020-06-09 12:08:07,320 - INFO - 向【//*[@content-desc="请输入QQ号码或手机或邮箱"]】输入【120517972】成功
+2020-06-09 12:08:08,430 - INFO - 向【//*[@content-desc="密码 安全"]】输入【123456】成功
+2020-06-09 12:08:10,009 - INFO - 关闭页面退出驱动成功
+2020-06-09 12:08:13,202 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 12:08:13,210 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:08:13,211 - INFO - 开始发送邮件
+2020-06-09 12:08:13,211 - INFO - 结束用例
+2020-06-09 12:36:01,700 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:36:01,703 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:36:22,663 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:36:27,950 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 12:36:27,950 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:36:27,951 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:36:33,186 - INFO - --------开始启动appium-------------
+2020-06-09 12:36:34,203 - INFO - --------appium服务 成功--------------
+2020-06-09 12:36:54,530 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:36:54,530 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:36:54,530 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:36:54,531 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:36:54,531 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:36:54,531 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:36:54,531 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:36:54,531 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:36:57,660 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 12:36:57,668 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:36:57,668 - INFO - 开始发送邮件
+2020-06-09 12:36:57,668 - INFO - 结束用例
+2020-06-09 12:39:42,040 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:39:42,042 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:40:00,955 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:40:00,955 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:40:00,956 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:00,956 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:40:00,956 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:00,956 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:40:00,956 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:40:00,957 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:40:04,085 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 128
+2020-06-09 12:40:04,095 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:40:04,095 - INFO - 开始发送邮件
+2020-06-09 12:40:04,096 - INFO - 结束用例
+2020-06-09 12:40:07,618 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:40:07,618 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:40:07,618 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:07,618 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:40:07,619 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:07,619 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:40:07,619 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:40:07,619 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:40:10,748 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 128
+2020-06-09 12:40:10,756 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:40:10,756 - INFO - 开始发送邮件
+2020-06-09 12:40:10,756 - INFO - 结束用例
+2020-06-09 12:40:33,672 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:40:33,674 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:40:44,597 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:40:44,597 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:40:44,598 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:44,598 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:40:44,598 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:40:44,598 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:40:44,599 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:40:44,599 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:40:47,729 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 128
+2020-06-09 12:40:47,737 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:40:47,738 - INFO - 开始发送邮件
+2020-06-09 12:40:47,738 - INFO - 结束用例
+2020-06-09 12:41:40,425 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+AttributeError: 'NoneType' object has no attribute 'implicitly_wait'
+
+2020-06-09 12:41:40,426 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:41:40,426 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:41:40,426 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:41:40,427 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+
+2020-06-09 12:41:40,427 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:41:40,427 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:41:40,427 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+2020-06-09 12:41:43,563 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 128
+2020-06-09 12:41:43,571 - INFO - ['mumuQQ登录与退出']
+2020-06-09 12:41:43,571 - INFO - 开始发送邮件
+2020-06-09 12:41:43,571 - INFO - 结束用例
+2020-06-09 12:43:47,289 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:43:47,291 - INFO - {'desc': '设备名称_逍遥,appium启动服务端口号_4725', 'port': 4724, 'desired_caps': {'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:21503', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:21503'}}
+2020-06-09 12:44:22,001 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:44:22,004 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:47:15,776 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:47:15,777 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:47:15,780 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:47:15,782 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:47:36,078 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:47:36,079 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:47:40,631 - INFO - adb连接设备成功
+2020-06-09 12:47:40,631 - INFO - adb连接设备成功
+2020-06-09 12:47:40,631 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:47:40,631 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:47:40,631 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:47:40,632 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:47:46,034 - INFO - --------开始启动appium-------------
+2020-06-09 12:47:46,041 - INFO - --------开始启动appium-------------
+2020-06-09 12:47:47,063 - INFO - --------appium服务 成功--------------
+2020-06-09 12:47:47,067 - INFO - --------appium服务 成功--------------
+2020-06-09 12:48:17,654 - INFO - 点击元素【com.tencent.mobileqq:id/btn_login】成功
+2020-06-09 12:48:19,566 - INFO - 向【//*[@content-desc="请输入QQ号码或手机或邮箱"]】输入【120517972】成功
+2020-06-09 12:48:20,687 - INFO - 向【//*[@content-desc="密码 安全"]】输入【123456】成功
+2020-06-09 12:48:22,014 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 259, in __findele
+    self.driver.implicitly_wait(5)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 912, in implicitly_wait
+    'implicit': int(float(time_to_wait) * 1000)})
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 264, in __findele
+    self.driver.implicitly_wait(self.t)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 912, in implicitly_wait
+    'implicit': int(float(time_to_wait) * 1000)})
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+2020-06-09 12:48:22,019 - ERROR - No such element:com.tencent.mobileqq:id/btn_login
+2020-06-09 12:48:22,035 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+2020-06-09 12:48:22,036 - ERROR - No such element://*[@content-desc="请输入QQ号码或手机或邮箱"]
+2020-06-09 12:48:22,053 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 254, in __findele
+    ele = self.driver.find_element_by_xpath(path)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+2020-06-09 12:48:22,054 - ERROR - No such element://*[@content-desc="密码 安全"]
+2020-06-09 12:48:22,069 - INFO - 关闭页面退出驱动失败
+2020-06-09 12:48:22,070 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\app\App.py", line 362, in quit
+    self.driver.quit()
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 698, in quit
+    self.execute(Command.QUIT)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+2020-06-09 12:48:22,127 - INFO - 关闭页面退出驱动成功
+2020-06-09 12:48:25,403 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 0
+2020-06-09 12:48:25,409 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:48:25,412 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:48:25,415 - INFO - 执行关闭appium：taskkill /F /IM node.exe 成功 1
+2020-06-09 12:48:25,416 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:48:25,419 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:48:45,862 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:48:45,874 - INFO - 已执行cmd C:\Program Files (x86)\MuMu\emulator\nemu\EmulatorShell\NemuPlayer.exe
+2020-06-09 12:48:50,939 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 12:48:50,939 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:48:50,939 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:48:51,096 - INFO - 
+2020-06-09 12:48:51,148 - ERROR - Traceback (most recent call last):
+  File "D:\installation\pythonworkspace\AutomationFramework\APP_PO\common\server.py", line 104, in adb_connect_device
+    result = result.readlines()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 42: illegal multibyte sequence
+
+2020-06-09 12:48:51,149 - INFO - port:4723,udid:127.0.0.1:7555
+2020-06-09 12:48:51,149 - INFO - appium -a 127.0.0.1 -p 4723 -U 127.0.0.1:7555 --log D:\installation\pythonworkspace\AutomationFramework/log/appium_4723.log --no-reset
+2020-06-09 12:48:51,270 - INFO - 
+2020-06-09 12:48:51,324 - INFO - 
+2020-06-09 12:48:51,441 - INFO - 
+2020-06-09 12:48:51,494 - INFO - 
+2020-06-09 12:48:51,607 - INFO - 
+2020-06-09 12:48:51,661 - INFO - 
+2020-06-09 12:48:51,776 - INFO - 
+2020-06-09 12:48:51,825 - INFO - 
+2020-06-09 12:48:51,941 - INFO - 
+2020-06-09 12:48:51,992 - INFO - 
+2020-06-09 12:48:52,102 - INFO - 
+2020-06-09 12:48:52,153 - INFO - 
+2020-06-09 12:48:52,267 - INFO - 
+2020-06-09 12:48:52,319 - INFO - 
+2020-06-09 12:48:52,432 - INFO - 
+2020-06-09 12:48:52,486 - INFO - 
+2020-06-09 12:48:52,601 - INFO - 
+2020-06-09 12:48:52,674 - INFO - 
+2020-06-09 12:48:52,838 - INFO - 
+2020-06-09 12:48:57,602 - INFO - --------开始启动appium-------------
+2020-06-09 12:48:57,839 - INFO - --------开始启动appium-------------
+2020-06-09 12:48:58,617 - INFO - --------appium服务 成功--------------
+2020-06-09 12:48:58,855 - INFO - --------appium服务 成功--------------
+2020-06-09 12:49:48,756 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:49:48,757 - INFO - 配置地址：D:\installation\pythonworkspace\AutomationFramework\APP_PO\configs\qq.yaml
+2020-06-09 12:49:48,759 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:49:48,761 - INFO - {'desc': '设备名称_MuMu,appium启动服务端口号_4724', 'port': 4723, 'desired_caps': {'platformName': 'Android', 'deviceName': '127.0.0.1:7555', 'platformVersion': '6.0.1', 'appPackage': 'com.tencent.mobileqq', 'appActivity': '.activity.LoginActivity', 'noReset': True, 'udid': '127.0.0.1:7555'}}
+2020-06-09 12:50:42,069 - INFO - 111*********************** 开始执行第1个sheet用例 **********************
+2020-06-09 12:50:46,874 - INFO - 成功打开chrome浏览器
+2020-06-09 12:51:33,151 - INFO - 111*********************** 开始执行第1个sheet用例 **********************
